@@ -3,15 +3,18 @@
     padding: 30px;
 }
 #content {
-    color: white;
     border: 5px solid rgb(249, 76, 104);
     background-color: rgb(251, 137, 156);
-    padding: 15px;
+    color: white;
     margin: 20px 0px 20px 0px;
+    padding: 15px;
+}
+#content > div {
+    margin: 16px 0px;
 }
 #quote_content {
-    margin: 20px 0px 0px 50px;
+    margin-left: 50px
 }
 #quote_citation {
-    margin: 0px 0px 20px 70px;
+    margin-left: 70px
 }
