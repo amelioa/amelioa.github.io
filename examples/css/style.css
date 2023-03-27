@@ -1,0 +1,25 @@
+#div_1 {
+    border: 5px solid rgb(156, 124, 205);
+}
+#div_2 {
+    border: 10px dashed rgb(54, 223, 246);
+    padding: 25px;
+}
+#div_3 {
+    border: 10px dotted rgb(153, 228, 153);
+    padding: 40px;
+    margin: 50px;
+}
+#div_4 {
+    border: 3px solid rgb(255, 153, 170);
+    padding: 8px;
+    margin: 20px;
+}
+#div_5 {
+    background-color: #222222;
+    color: white;
+}
+#div_6 {
+    padding-left: 50px;
+    margin: 50px 12px;
+}
