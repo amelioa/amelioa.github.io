@@ -1,3 +1,13 @@
+#image_container {
+    float:left;
+    margin: 20px;
+}
+
+#clear {
+    clear: both;
+}
+
+
 #header {
     background-color: rgb(86, 60, 109);
     height: 300px;
