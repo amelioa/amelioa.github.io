@@ -1,6 +1,9 @@
 #div_1 {
     border: 5px solid rgb(156, 124, 205);
 }
+#div_1:hover {
+    background-color: aquamarine;
+}
 #div_2 {
     border: 10px dashed rgb(54, 223, 246);
     padding: 25px;

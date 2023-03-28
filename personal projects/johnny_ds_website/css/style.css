@@ -1,0 +1,11 @@
+#paragraph {
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    /* text-align: center; */
+}
+#phone_number {
+    background-color: rgb(55, 80, 107);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
