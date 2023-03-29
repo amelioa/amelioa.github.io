@@ -1,7 +1,43 @@
+.nav_text {
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1330px;
+}
+
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: rgb(55, 80, 107);
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+nav ul li {
+    font-size: 18px;
+    display: inline-block;
+    padding: 24px;
+}
+
+
+
 #paragraph {
     background-color: rgb(243, 243, 243);
     padding: 20px;
-    /* text-align: center; */
+    font-size: 20pt;
+    text-align: center;
 }
 #phone_number {
     background-color: rgb(55, 80, 107);
