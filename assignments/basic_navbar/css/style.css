@@ -23,3 +23,9 @@ nav ul li {
 p {
     height: 500px;
 }
+
+h1,
+p {
+    width: 600px;
+    margin: 24px auto;
+}
