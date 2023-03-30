@@ -31,7 +31,6 @@ nav ul li {
 }
 
 #paragraph {
-    background-color: rgb(243, 243, 243);
     padding: 20px;
     font-size: 20pt;
     text-align: center;
@@ -55,4 +54,8 @@ footer {
     background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
+}
+
+main {
+    background-color: rgb(243, 243, 243);
 }
