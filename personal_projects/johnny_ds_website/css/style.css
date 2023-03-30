@@ -4,7 +4,7 @@
 
 .responsive {
     width: 100%;
-    max-height: 500px;
+    max-width: 1920;
     height: auto;
 }
 
@@ -29,8 +29,6 @@ nav ul li {
     display: inline-block;
     padding: 24px;
 }
-
-
 
 #paragraph {
     background-color: rgb(243, 243, 243);
