@@ -18,6 +18,10 @@ nav {
     top: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav ul {
     margin: 0px;
     padding: 0px;
