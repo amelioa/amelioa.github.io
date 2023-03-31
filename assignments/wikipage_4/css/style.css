@@ -15,6 +15,7 @@ p {
 #container {
     border: solid black 1px;
     width: 250px;
+    background-color: rgb(246, 246, 246);
 }
 
 #container_chronology {
