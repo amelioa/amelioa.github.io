@@ -1,0 +1,34 @@
+p {
+    font-family: sans-serif;
+}
+
+#container_header {
+    background-color: rgb(86, 110, 146);
+    text-align: center;
+}
+
+#container_footer {
+    background-color: rgb(86, 110, 146);
+    text-align: center;
+}
+
+#container {
+    border: solid black 1px;
+    width: 250px;
+}
+
+#container_chronology {
+    background-color: rgb(86, 110, 146);
+    text-align: center;
+}
+
+#container_alt {
+    background-color: rgb(86, 110, 146);
+    text-align: center;
+}
+
+#container_singles {
+    background-color: rgb(86, 110, 146);
+    text-align: center;
+}
+
