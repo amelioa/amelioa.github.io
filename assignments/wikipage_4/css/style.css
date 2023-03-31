@@ -44,3 +44,30 @@ h3 {
     font-style: italic;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.wiki_image {
+    width: 250px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 4px;
+    margin: 12px;
+}
+
+.wiki_image img {
+    width: 100%;
+}
+
+/* .right {
+    float: right;
+}
+
+.left {
+    float: left;
+} */
