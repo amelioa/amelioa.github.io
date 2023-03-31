@@ -72,3 +72,17 @@ a:hover {
 .left {
     float: left;
 } */
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+.split {
+    justify-content: space-between;
+}
+
+nav a {
+    padding-left: 25px;
+    color: black;
+}
