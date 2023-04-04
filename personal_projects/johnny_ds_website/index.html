@@ -8,7 +8,8 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <nav>
+        <nav id="desktop_nav">
+            <button id="hamburger">Sidebar</button>
             <ul>
                 <li>
                     <a href="index.html" class="nav_text">HOME</a>
@@ -23,6 +24,23 @@
                     <a href="catering_menu.html" class="nav_text">CATERING MENU</a>
                 </li>
             </ul>
+        </nav>
+        <nav id="mobile_nav">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav_text">HOME</a>
+                </li>
+                <li>
+                    <a href="dinner_menu.html" class="nav_text">DINNER MENU</a>
+                </li>
+                <li>
+                    <a href="togo_menu.html" class="nav_text">TOGO MENU</a>
+                </li>
+                <li>
+                    <a href="catering_menu.html" class="nav_text">CATERING MENU</a>
+                </li>
+            </ul>
+            <button id="close">X</button>
         </nav>
         <img src="images/Johnnyds.jpg" class="responsive">
         <div id="paragraph">
@@ -46,5 +64,18 @@
         <a href="#">Instagram</a>
         <a href="#">Facebook</a>
     </footer>
+    <script type="text/javascript">
+        let hamburgerButton = document.getElementById("hamburger");
+        let closeButton = document.getElementById("close");
+        let mobileNav = document.getElementById("mobile_nav");
+
+        hamburgerButton.onclick = function(){
+            mobileNav.classList.add("active");
+        };
+
+        closeButton.onclick = function(){
+            mobileNav.classList.remove("active");
+        };
+    </script>
     </body>
 </html>

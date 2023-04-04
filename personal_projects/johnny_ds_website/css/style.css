@@ -60,3 +60,35 @@ footer {
     padding: 20px;
 }
 
+#mobile_nav,
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #desktop_nav a {
+        display: none;
+    }
+    #mobile_nav {
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        transition: left 0.5s;
+        display: block;
+    }
+    #mobile_nav a {
+        color: black;
+    }
+    #mobile_nav.active {
+        left: 0px;
+    }
+    #hamburger {
+        display: inline-block;
+    }
+}
+
+
+
