@@ -59,6 +59,9 @@ li a {
 @media screen and (max-width: 768px) {
     ul {
         flex-direction: column;
+        text-align: center;
     }
 }
-
+#home {
+    margin-right: 0px;
+}
