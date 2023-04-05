@@ -40,8 +40,7 @@ li a {
 }
 
 .aboutus_dropdown_menu {
-    background-color: #63b47e;
-    /* #55705e */
+    background-color: #55705e;
     position: absolute;
     flex-direction: column;
     width: 100%;
@@ -73,8 +72,8 @@ li a {
     
 }
 
- .aboutus_dropdown_menu {
-    font-size: 8pt;
+.aboutus_dropdown_menu a {
+    font-size: 14pt;
 }
 
 #slideshow {
