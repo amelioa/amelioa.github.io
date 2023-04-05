@@ -1,0 +1,74 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: #55705e;
+    position: sticky;
+    top: 0px;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0px;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+ul li {
+    margin: 12px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 20pt;
+}
+
+#home {
+    margin-right: auto;
+}
+
+.aboutus_dropdown_container {
+    position: relative;
+}
+
+.aboutus_dropdown_menu {
+    background-color: #63b47e;
+    /* #55705e */
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    left: 0px;
+    top: 180%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s,
+        visibility 0.8s,
+        top 0.5s;
+}
+
+.aboutus_dropdown_container:hover .aboutus_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    top: 135%;
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    #home {
+        margin: 0px;
+    }
+}
+
+#logo_homebutton {
+    width: 50px;
+    margin: 0px;
+}
