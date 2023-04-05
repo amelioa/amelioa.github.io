@@ -1,0 +1,13 @@
+#container {
+    background-color: rgb(255, 249, 179);
+    margin: 200px;
+    height: 400px;
+    position: relative;
+}
+
+#inner_content {
+    background-color: rgb(255, 208, 122);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
