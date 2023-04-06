@@ -194,6 +194,16 @@ li a {
     width: 25px;
 }
 
+h1 {
+    font-family: 'Montserrat';
+    color: #282527;
+}
+
+p {
+    font-family: 'Montserrat';
+    color: #282527;
+}
+
 @-webkit-keyframes slide {
     20% {margin-left: 0px;}
     30% {margin-left: calc((100vw-16px)*-1);}
