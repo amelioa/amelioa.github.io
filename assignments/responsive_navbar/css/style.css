@@ -95,6 +95,10 @@ li a {
     width: 728px;
 }
 
+#donate_icon {
+    width: 25px;
+}
+
 @-webkit-keyframes slide {
     20% {margin-left: 0px;}
     30% {margin-left: -728px;}
