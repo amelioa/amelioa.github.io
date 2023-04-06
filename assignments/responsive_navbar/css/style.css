@@ -13,6 +13,10 @@ nav {
     left: 0px;
 }
 
+main {
+    margin: 20px;
+}
+
 ul {
     display: flex;
     justify-content: center;
@@ -43,6 +47,7 @@ li a {
     background-color: #55705e;
     position: absolute;
     flex-direction: column;
+    align-items: flex-start;
     width: 100%;
     left: 0px;
     top: 75%;
@@ -55,6 +60,84 @@ li a {
 }
 
 .aboutus_dropdown_container:hover .aboutus_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.visit_dropdown_container {
+    position: relative;
+}
+
+.visit_dropdown_menu {
+    background-color: #55705e;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120px;
+    left: -20%;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s,
+        visibility 0.8s,
+        top 0.5s;
+}
+
+.visit_dropdown_container:hover .visit_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.donate_dropdown_container {
+    position: relative;
+}
+
+.donate_dropdown_menu {
+    background-color: #55705e;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    left: 0px;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s,
+        visibility 0.8s,
+        top 0.5s;
+}
+
+.donate_dropdown_container:hover .donate_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.adopt_dropdown_container {
+    position: relative;
+}
+
+.adopt_dropdown_menu {
+    background-color: #55705e;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    left: 0px;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s,
+        visibility 0.8s,
+        top 0.5s;
+}
+
+.adopt_dropdown_container:hover .adopt_dropdown_menu {
     opacity: 1;
     visibility: visible;
     top: 100%;
@@ -76,23 +159,35 @@ li a {
     font-size: 14pt;
 }
 
+.visit_dropdown_menu a {
+    font-size: 14pt;
+}
+
+.donate_dropdown_menu a {
+    font-size: 14pt;
+}
+
+.adopt_dropdown_menu a {
+    font-size: 14pt;
+}
+
 #slideshow {
     text-align: center;
     overflow: hidden;
     height: 510px;
-    width: 728px;
+    width: calc(100vw-16px);
     margin: 0 auto;
   }
   
 .slide-wrapper {
-    width: 2912px;
+    width: calc((100vw-16px)*3);
     -webkit-animation: slide 18s ease infinite;
 }
 
 .slide {
     float: left;
     height: 510px;
-    width: 728px;
+    width: calc(100vw-16px);
 }
 
 #donate_icon {
@@ -101,12 +196,10 @@ li a {
 
 @-webkit-keyframes slide {
     20% {margin-left: 0px;}
-    30% {margin-left: -728px;}
-    50% {margin-left: -728px;}
-    60% {margin-left: -1456px;}
-    70% {margin-left: -1456px;}
-    80% {margin-left: -2184px;}
-    90% {margin-left: -2184px;}
+    30% {margin-left: calc((100vw-16px)*-1);}
+    65% {margin-left: calc((100vw-16px)*-1);}
+    75% {margin-left: calc((100vw-16px)*-2);}
+    90% {margin-left: calc((100vw-16px)*-2);}
 }
 
 /* @media screen and (max-width: 768px) {
