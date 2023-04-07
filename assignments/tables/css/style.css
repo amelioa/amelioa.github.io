@@ -26,10 +26,16 @@ th, td {
 
 #row_1 {
     color: white;
+    border-bottom: none;
+}
+
+#row_2 {
+    border-bottom: 1px solid lightgray;
 }
 
 #row_3 {
     color: #049b7b;
+    border-bottom: 1px solid lightgray;
 }
 
 th:first-of-type {
@@ -38,4 +44,8 @@ th:first-of-type {
 
 th:last-of-type {
     border-top-right-radius: 10px;
+}
+
+#row_4 {
+    border-bottom: 3px solid #049b7b;
 }
