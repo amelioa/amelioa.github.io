@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 body {
     margin: 0px;
 }
@@ -28,16 +29,29 @@ ul {
 }
 
 ul li {
-    padding: 10px 12px;
+    padding: 10px 16px;
 }
 
 li a {
     color: white;
     text-decoration: none;
     font-family: 'Montserrat';
+    font-weight: 600;
     font-size: 20pt;
 }
 
+
+h1 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #282527;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #282527;
+}
 
 .aboutus_dropdown_container {
     position: relative;
@@ -194,13 +208,24 @@ li a {
     width: 25px;
 }
 
-h1 {
-    font-family: 'Montserrat';
-    color: #282527;
+.gallery img {
+    width: 200px;
+    box-sizing: border-box;
+    margin: 24px;
 }
 
-p {
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu {
+
+}
+
+ol li {
     font-family: 'Montserrat';
+    font-weight: 400;
     color: #282527;
 }
 
