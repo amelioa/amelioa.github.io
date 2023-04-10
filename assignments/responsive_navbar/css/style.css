@@ -235,7 +235,7 @@ ol li {
     90% {margin-left: calc((100vw-16px)*-2);}
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     ul {
         flex-direction: column;
         text-align: center;
@@ -243,7 +243,7 @@ ol li {
     #home {
         margin: 0px;
     }
-} */
+}
 
 
 
