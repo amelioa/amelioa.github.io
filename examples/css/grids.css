@@ -1,0 +1,36 @@
+#my_grid {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+}
+
+.block {
+    padding: 20px;
+}
+
+.block_1 {
+    background-color: #ffadc1;
+}
+
+.block_2 {
+    background-color: #ffd6a5;
+}  
+
+.block_3 {
+    background-color: #fdffb6;
+}
+
+.block_4 {
+    background-color: #caffbf;
+}
+
+.block_5 {
+    background-color: #9bf6ff;
+}
+
+.block_6 {
+    background-color: #a0c4ff;
+}
+
+.block_7 {
+    background-color: #bdb2ff;
+}
