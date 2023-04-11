@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+}
+
+p {
+    font-size: 32px;
+    margin: 24px;
+    height: 1000px;
+}
+
+#hero_1 {
+    background-image: url("../images/background_image_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+
+#hero_1 h1 {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    font-size: 60px;
+}
+
+#hero_2 {
+    background-image: url("../images/background_image_2.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(245, 196, 118);
+}
+
+#hero_2 h2 {
+    font-size: 60px;
+}
+
+#hero_2 h3 {
+    font-size: 40px;
+}
+
+#hero_3 {
+    background-image: url("../images/background_image_3.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#hero_3 h2 {
+    font-size: 60px;
+    padding-top: 60px;
+}
+
+#hero_3 h3 {
+    font-size: 48px;
+    padding-bottom: 60px;
+}
