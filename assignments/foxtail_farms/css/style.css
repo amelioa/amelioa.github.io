@@ -1,213 +1,169 @@
-/* Google Font API imports - found at https://fonts.google.com/ */
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;0,500;0,600;1,500&display=swap');
-/*****************************************************************************
-  Heading, Link, and Misc. Styles
-*****************************************************************************/
-* {
-    box-sizing: border-box;
+/* NAVIGATION */
+
+nav {
+    background-color: white;
+    position: sticky;
+    top: 0px;
 }
 
-body {
-    margin: 0;
-}
-
-
-
-#foxtail_lobster {
-    font-family: 'Lobster', cursive;
-    color: black;
-}
-
-#farms_montserrat {
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    color: #e1a177
-}
-
-a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    
-}
-
-h4,
-p {
-    font-family: 'Assistant', sans-serif;
-}
-
-h1 {
-    font-size: 60px;
-    margin-bottom: 0;
-}
-
-h4 {
-    font-size: 18px;
-    margin-top: 4px;
-}
-
-a {
-    text-decoration: none;
-}
-
-nav,
-nav a,
-footer a {
-    color: black;
-}
-
-nav a:hover,
-footer a:hover {
-    text-decoration: underline;
-}
-
-#carousel_container {
-    margin-top: 30px;
-}
-
-#logo_home {
+#logo_homebutton {
     width: 75px;
 }
 
-/****************************************************************************
-  Grid styles
-****************************************************************************/
-#site_grid {
-    display: grid;
-    grid-template-columns: 1fr 800px 1fr;
-    grid-auto-rows: minmax(50px,auto);
-    grid-template-areas:
-        "nav_area nav_area nav_area"
-        "hero_area hero_area hero_area"
-        ". three_cards_area ."
-        ". carousel_area ."
-        ". gallery_area ."
-        ". two_cards_area ."
-        "footer_area footer_area footer_area";
+main {
+    margin: 20px;
 }
 
-/* section {
-    border: 4px solid indigo;
-} */
-
-nav {
-    grid-area: nav_area;
-}
-
-#hero {
-    grid-area: hero_area;
-}
-
-#three_cards {
-    grid-area: three_cards_area;
-}
-
-#carousel_container {
-    grid-area: carousel_area;
-}
-
-#gallery_container {
-    grid-area: gallery_area;
-}
-
-#two_cards {
-    grid-area: two_cards_area;
-}
-
-footer {
-    grid-area: footer_area;
-}
-/****************************************************************************
-  Nav/Footer styles
-****************************************************************************/
-nav {
+ul {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    display: flex;
-    margin: 0 24px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-#nav_links {
-    justify-content: center;
-}
-
-#nav_links,
-.social_media {
-    display: flex;
     list-style-type: none;
+    padding: 0px;
+    max-width: 800px;
+    margin: 0px auto;
 }
 
-#nav_links li,
-.social_media li {
-    padding: 0 4px;
+ul li {
+    padding: 10px 16px;
 }
 
-nav .social_media {
-    justify-content: flex-end;
-    padding-left: 0;
-}
-
-.social_media i {
-    font-size: 20px;
-}
-
-nav,
-nav a,
-footer a {
+li a {
     color: black;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20pt;
 }
 
-nav a:hover,
-footer a:hover {
-    text-decoration: underline;
+.aboutus_dropdown_container {
+    position: relative;
 }
 
-nav ul,
-nav h2 {
-    flex: 1;
-    margin: 0;
-    padding: 0;
+.aboutus_dropdown_menu {
+    background-color: white;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    left: 0px;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s,
+        visibility 0.8s,
+        top 0.5s;
 }
 
-footer ul {
-    padding: 0;
+.aboutus_dropdown_container:hover .aboutus_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
 }
 
-footer {
-    background-color: #e1a177;
+.visit_dropdown_container {
+    position: relative;
 }
 
+.visit_dropdown_menu {
+    background-color: white;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120px;
+    left: -20%;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s,
+        visibility 0.8s,
+        top 0.5s;
+}
 
-/****************************************************************************
-  Hero styles
-****************************************************************************/
+.visit_dropdown_container:hover .visit_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.market_dropdown_container {
+    position: relative;
+}
+
+.market_dropdown_menu {
+    background-color: white;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    left: 0px;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s,
+        visibility 0.8s,
+        top 0.5s;
+}
+
+.market_dropdown_container:hover .market_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.more_dropdown_container {
+    position: relative;
+}
+
+.more_dropdown_menu {
+    background-color: white;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    left: 0px;
+    top: 75%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s,
+        visibility 0.8s,
+        top 0.5s;
+}
+
+.more_dropdown_container:hover .more_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* HERO */
+
 #hero {
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../images/abstractBackground.jpg");
+    background-image: url("../images/02-blend-coffee-mockup-by-mockupcloud.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-#hero h1 {
-    color: white
-}
-
-#hero h4 {
+#hero_content h1,
+h4 {
     color: white;
 }
 
-#hero a {
-    background-color: white;
-    color: indigo;
-    border: 2px solid indigo;
+#hero_content a {
+    background-color: black;
+    color: white;
     border-radius: 24px;
     display: inline-block;
     padding: 8px 16px;
@@ -216,16 +172,39 @@ footer {
     transition: transform 0.25s;
 }
 
-#hero a:hover {
+#hero_content a:hover {
     transform: scale(1.1);
 }
-/****************************************************************************
-  Card styles
-****************************************************************************/
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* CAROUSEL */
+
+#carousel_container {
+    margin-top: 30px;
+}
+
+#carousel_container {
+    grid-area: carousel_area;
+}
+
+#carousel_container h5,
+p {
+    color: black;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* CARDS */
+
+#three_cards {
+    display: flex;
+    flex-direction: column;
+}
 
 .card {
-    border: 2px solid indigo;
-    color: indigo;
+    border: 2px solid #e1a177;
+    color: #e1a177;
     margin: 48px 24px 24px;
     padding: 12px 12px 24px;
     text-align: center;
@@ -241,18 +220,9 @@ footer {
     margin: 0px;
 }
 
-#three_cards {
-    display: flex;
-}
-
-#two_cards {
-    display: flex;
-}
-
 .card a {
-    background-color: white;
-    color: indigo;
-    border: 2px solid indigo;
+    background-color: #e1a177;
+    color: white;
     border-radius: 24px;
     display: inline-block;
     padding: 8px 16px;
@@ -265,136 +235,32 @@ footer {
     transform: scale(1.1);
 }
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
-/****************************************************************************
-  Gallery styles
-****************************************************************************/
-
-#gallery_container {
-    text-align: center;
-}   
+/* GALLERY */
 
 #gallery_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#gallery_1 img {
-    width: 100%;
-}
-
-#gallery_2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#gallery_2 img {
-    height: calc(800px / 3);
-    width: calc(800px / 3);
-    object-fit: cover;
-}
-
-#gallery_3 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#gallery_3 img {
-    height: 200px;
-    margin: 12px;
-    flex: 1 0 auto;
-    object-fit: cover;
-}
-
-#gallery_4 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 1100px;
 }
 
-#gallery_4 img {
+#gallery_1 img {
     width: 30%;
     margin: 12px;
 }
 
-#gallery_5 {
-    columns: 3 auto;
-    column-gap: 24px;
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
 }
 
-#gallery_5 img {
-    width: 100%;
-    margin-bottom: 24px;
-}
-
-#gallery_6 {
-    columns: 3 auto;
-    column-gap: 24px;
-}   
-
-#gallery_6 img {
-    width: 100%;
-    margin-bottom: 24px;
-}
-
-#gallery_container {
-    margin-top: 40px;
-}
-
-/****************************************************************************
-  Media Query - Mobile Breakpoint
-****************************************************************************/
-@media screen and (max-width: 800px) {
-    #site_grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "nav_area"
-            "hero_area"
-            "three_cards_area"
-            "carousel_area"
-            "gallery_area"
-            "two_cards_area"
-            "footer_area";
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    #three_cards,
-    #two_cards {
-        flex-direction: column;
-    }
-
-    .card {
-        align-items: center;
-        margin: 36px 24px 0px;
-    }
-
-    #gallery_1,
-    #gallery_2 {
-        grid-template-columns: 1fr;
-    }
-
-    #gallery_2 img {
-        width: 100%;
-        height: auto;
-    }
-
-    #gallery_4 {
-        max-height: 1900px;
-    }
-
-    #gallery_4 img {
-        width: 45%;
-    }
-
-    #gallery_5 {
-        columns: 2 auto;
-    }
-    
-    #gallery_6 {
-        columns: 2 auto;
-    }
+footer p {
+    color: white;
 }
