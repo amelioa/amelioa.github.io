@@ -63,6 +63,7 @@ nav {
     background-color: white;
     position: sticky;
     top: 0px;
+    z-index: 10;
 }
 
 #logo_homebutton {
@@ -222,7 +223,6 @@ p {
 
 #three_cards {
     display: flex;
-    flex-direction: column;
 }
 
 .card {
