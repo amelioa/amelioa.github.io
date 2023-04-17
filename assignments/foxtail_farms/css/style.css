@@ -231,6 +231,15 @@ li a {
 
 /* CAROUSEL */
 
+#carousel_container h5 {
+    font-family: 'Lobster';
+    font-size: 30pt;
+}
+
+#carousel_container p {
+    font-family: 'Montserrat'
+}
+
 #carousel_container {
     grid-area: carousel_area;
 }
