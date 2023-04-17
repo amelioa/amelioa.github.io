@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms Example</title>
+    </head>
+    <body>
+        <h1>Let's look at some forms!</h1>
+        <form>
+            <fieldset>
+                <legend>Text-related Form Elements</legend>
+
+                <h2>Text Input</h2>
+                <h4>Each input should have a unique 'name' attribute</h4>
+                <p>What is your name?</p>
+
+                <div>
+                    <label for="first_name_id">First Name:</label>
+                    <input type="text" id="first_name_id" name="first_name">
+                </div>
+                <div>
+                    <label for="last_name_id">Last Name:</label>
+                    <input type="text" id="last_name_id" name="last_name">
+                </div>
+
+                <h2>Textarea Input</h2>
+                <h4>Each textarea should also have a unique 'name' attribute</h4>
+                
+                <div>
+                    <label for="code_feelings_id">How do you feel about programming?</label>
+                    <textarea
+                        id="code_feelings_id"
+                        name="code_feelings"
+                        rows="5"
+                        cols="40"
+                        placeholder="This is the default text for a text area"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Option-related Form Elements</legend>
+                <h2>Checkbox Input</h2>
+                <h4>
+                    All checkbox inputs should have unique (but similar)
+                    'name' attributes and different 'value' attributes
+                </h4>
+                <p>How do you get to class?</p>
+                <div>
+                    <input type="checkbox" id="bike_checkbox" name="vehicle_1" value="bike">
+                    <label for="bike_checkbox">Bike</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bus_checkbox" name="vehicle_2" value="bus">
+                    <label for="?_checkbox">Bus</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="car_checkbox" name="vehicle_3" value="car">
+                    <label for="car_checkbox">Car</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bed_checkbox" name="vehicle_4" value="bed">
+                    <label for="bed_checkbox">I roll out of bed and open my laptop</label>
+                </div>
+
+                <h2>Radio Input</h2>
+                <h4>
+                    All radio inputs of the same group should have
+                    the SAME 'name' attributes, but different 'value' attributes
+                </h4>
+                <p>What program are you in?</p>
+
+                <div>
+                    <input type="radio" id="rasp_radio" name="program" value="rasp">
+                    <label for="rasp_radio">Recording Arts and Show Production</label>
+                </div>
+                <div>
+                    <input type="radio" id="dfvp_radio" name="program" value="dfvp">
+                    <label for="dfvp_radio">Digital Filmmaking and Video Production</label>
+                </div>
+                <div>
+                    <input type="radio" id="gdwd_radio" name="program" value="gdwd">
+                    <label for="gdwd_radio">Graphic Design and Web Development</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Complex Form Elements</legend>
+                <h2>Date Input</h2>
+                <h4>Each date input should have a unique 'name' attribute</h4>
+
+                <div>
+                    <label for="date_id">When is your birthday?</label>
+                    <input type="date" id="date_id" name="birthday">
+                </div>
+
+                <h2>Dropdown Input (select/options)</h2>
+                <h4>
+                    Each dropdown should have a unique 'name' attribute
+                    on the "select" element,
+                    and unique 'value' attributes on each "option" element
+                </h4>
+
+                <div>
+                    <label for="food_group_id">
+                        What is your favorite food group?
+                    </label>
+                    <select id="food_group_id" name="food_group">
+                        <option value="fruits">Fruits</option>
+                        <option value="vegetable">Vegetables</option>
+                        <option value="meats">Meat</option>
+                        <option value="grains">Grains</option>
+                        <option value="dairy">Dairy</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Button-related Form Elements</legend>
+                <h2>Button Inputs</h2>
+                <h4>A button input does not need a 'name' attribute,
+                    but to change the text inside the button,
+                    you will need to use the 'value' attribute.
+                </h4>
+
+                <div>
+                    <input type="button" value="Normal Button">
+                    <input type="reset" value="Click me to reset everything">
+                    <input type="submit" value="Submit everything">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
