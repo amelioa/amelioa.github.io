@@ -203,6 +203,30 @@ li a {
     top: 100%;
 }
 
+.aboutus_dropdown_menu a {
+    font-size: 14pt;
+}
+
+.visit_dropdown_menu a {
+    font-size: 14pt;
+}
+
+.donate_dropdown_menu a {
+    font-size: 14pt;
+}
+
+.adopt_dropdown_menu a {
+    font-size: 14pt;
+}
+
+.market_dropdown_menu a {
+    font-size: 14pt;
+}
+
+.more_dropdown_menu a {
+    font-size: 14pt;
+}
+
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* CAROUSEL */
