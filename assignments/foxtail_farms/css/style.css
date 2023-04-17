@@ -54,8 +54,11 @@ footer {
     grid-area: footer_area;
 }
 
-h2 {
+#technology h1,
+#gallery_container h1 {
     text-align: center;
+    margin-top: 20px;
+    font-family: 'Lobster'
 }
 /* NAVIGATION */
 
@@ -334,7 +337,7 @@ footer p {
             "footer_area";
     }
 
-    nav {
+    nav ul {
         flex-direction: column;
     }
 
