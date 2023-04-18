@@ -1,0 +1,25 @@
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-areas:
+        ". header_area ."
+        ". main_area .";
+}
+
+header {
+    grid-area: header_area;
+}
+
+main {
+    grid-area: main_area;
+}
+
+body {
+    background-color: #FAFAFA
+}
+
+form {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 36px;
+}
