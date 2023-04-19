@@ -37,6 +37,13 @@ input[type=submit] {
     /* font-size: 12pt; */
 }
 
+#submit_button {
+    margin-top: 20px;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+}
+
 input[type=date] {
     font-family: 'Montserrat', sans-serif;
 }
@@ -47,4 +54,8 @@ textarea {
 
 select {
     font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
 }
