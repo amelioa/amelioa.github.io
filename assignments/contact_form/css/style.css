@@ -46,6 +46,14 @@ h4 {
     margin-bottom: 12px;
 }
 
+input:not(:focus):not(:placeholder-shown):invalid {
+    background-color: rgb(252, 210, 210);
+}
+
+textarea:not(:focus):not(:placeholder-shown):invalid {
+    background-color: rgb(252, 210, 210);
+}
+
 /* SPECIFIC STYLING */
 
 input[type=submit] {
@@ -106,22 +114,6 @@ header h4 {
     margin-bottom: 30px;
 }
 
-input:not(:focus):not(:placeholder-shown):invalid {
-    background-color: rgb(252, 210, 210);
-}
 
-textarea:not(:focus):not(:placeholder-shown):invalid {
-    background-color: rgb(252, 210, 210);
-}
 
-select option:disabled {
-    color: red;
-}
 
-select option:selected {
-    color: red;
-}
-
-select option:first-child {
-    color: red;
-}
