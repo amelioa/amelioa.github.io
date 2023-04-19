@@ -16,9 +16,11 @@ main {
     grid-area: main_area;
 }
 
+/* OVERALL STYLING */
+
 body {
-    background-color: #FAFAFA;
-    font-family: 'Montserrat', sans-serif
+    background-color: rgb(249, 246, 255);
+    font-family: 'Montserrat', sans-serif;
 }
 
 form {
@@ -27,14 +29,53 @@ form {
     padding: 36px;
 }
 
+select {
+    font-family: 'Montserrat', sans-serif;
+    padding: 4px;
+}
+
+header {
+    text-align: center;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    margin-bottom: 12px;
+}
+
+/* SPECIFIC STYLING */
+
 input[type=submit] {
     background: rgb(138, 99, 196);
     border: 0;
     border-radius: 8px;
     padding: 12px 30px;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    /* font-size: 12pt; */
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background: rgb(159, 134, 197);
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+input[type=submit]:active {
+    background: rgb(117, 72, 186);
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: bold;
 }
 
 #submit_button {
@@ -44,18 +85,24 @@ input[type=submit] {
     align-items: center;
 }
 
-input[type=date] {
-    font-family: 'Montserrat', sans-serif;
-}
-
 textarea {
     font-family: 'Montserrat', sans-serif;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
 }
 
-select {
-    font-family: 'Montserrat', sans-serif;
+.text_input input {
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
-header {
-    text-align: center;
+#personal_info input {
+    width: 100%;
+    padding: 4px;
 }
+
+header h4 {
+    margin-bottom: 30px;
+}
+
