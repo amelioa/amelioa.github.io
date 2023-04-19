@@ -17,35 +17,43 @@
                 <form>
                     <h4>How did you hear about Double A Design?</h4>
                     <div>
-                        <input type="radio" id="search_engine_radio" name="option" value="search_engine">
+                        <input type="radio" id="search_engine_radio" name="option" value="search_engine" required>
                         <label for="search_engine_radio">Search engine (Google, Bing, etc.)</label>
                     </div>
                     <div>
-                        <input type="radio" id="referred_radio" name="option" value="referred">
+                        <input type="radio" id="referred_radio" name="option" value="referred" required>
                         <label for="referred_radio">Referred by a friend or colleague</label>
                     </div>
                     <div>
-                        <input type="radio" id="social_media_radio" name="option" value="social_media">
+                        <input type="radio" id="social_media_radio" name="option" value="social_media" required>
                         <label for="social_media_radio">Social media</label>
                     </div>
                     <div>
-                        <input type="radio" id="blog_or_publication_radio" name="option" value="blog_or_publication">
+                        <input type="radio" id="blog_or_publication_radio" name="option" value="blog_or_publication" required>
                         <label for="blog_or_publication_radio">Blog or publication</label>
                     </div>
                     <div>
-                        <input type="radio" id="linkedin_radio" name="option" value="linkedin">
+                        <input type="radio" id="linkedin_radio" name="option" value="linkedin" required>
                         <label for="linkedin_radio">Linkedin</label>
                     </div>
                     <div>
-                        <input type="radio" id="other_radio" name="option" value="other">
+                        <input type="radio" id="other_radio" name="option" value="other" required>
                         <label for="other_radio"><span id="other">Other:</span></label>
-                        <input type="text" id="other_id" name="other"> 
+                        <input
+                            minlength="2"
+                            maxlength="50"
+                            type="text"
+                            id="other_id"
+                            name="other"> 
                     </div>
                     <div>
                         <label for="services_id">
                            <h4>Which service are you interested in?</h4>
                         </label>
-                        <select id="services_id" name="services">
+                        <select id="services_id" name="services" required>
+                            <option value="none" disabled selected>
+                                Select a service
+                            </option>
                             <option value="logo_package">Logo package</option>
                             <option value="full_brand_identity_package">Full brand identity package</option>
                             <option value="website_design_package">Website design package</option>
@@ -54,29 +62,32 @@
                     <div>
                         <label for="business_info_id"><h4>Tell me about your business and what you're looking for with my service. Go into as much detail as possible!</h4></label>
                         <textarea
+                            required
+                            minlength="20"
+                            maxlength="500"
                             id="business_info_id"
                             name="business_info"
                             placeholder="Tell me about your business here"></textarea>
                     </div>
                     <h4>What is your budget?</h4>
                     <div>
-                        <input type="radio" id="70_140_radio" name="budget_options" value="70_140">
+                        <input type="radio" id="70_140_radio" name="budget_options" value="70_140" required>
                         <label for="70_140_radio">$70 - $140</label>
                     </div>
                     <div>
-                        <input type="radio" id="200_470_radio" name="budget_options" value="200_470">
+                        <input type="radio" id="200_470_radio" name="budget_options" value="200_470" required>
                         <label for="200_470_radio">$200 - $470</label>
                     </div>
                     <div>
-                        <input type="radio" id="540_875_radio" name="budget_options" value="540_875">
+                        <input type="radio" id="540_875_radio" name="budget_options" value="540_875" required>
                         <label for="540_875_radio">$540 - $875</label>
                     </div>
                     <div>
-                        <input type="radio" id="940_1275_radio" name="budget_options" value="940_1275">
+                        <input type="radio" id="940_1275_radio" name="budget_options" value="940_1275" required>
                         <label for="940_1275_radio">$940 - $1275</label>
                     </div>
                     <div>
-                        <input type="radio" id="1350_radio" name="budget_options" value="1350">
+                        <input type="radio" id="1350_radio" name="budget_options" value="1350" required>
                         <label for="1350_radio">$1350</label>
                     </div>
                     <h4>Do you have a deadline?</h4>
@@ -90,15 +101,34 @@
                     <div id="personal_info">
                     <div class="text_input">
                         <label for="full_name_id">Full name:</label>
-                        <input type="text" id="full_name_id" name="full_name">
+                        <input
+                            required
+                            minlength="5"
+                            maxlength="50"
+                            type="text"
+                            id="full_name_id"
+                            name="full_name"
+                            placeholder="e.g. Jane Doe">
                     </div>
                     <div class="text_input">
                         <label for="email_id">Email:</label>
-                        <input type="email" id="email_id" name="email">
+                        <input
+                            required
+                            minlength="5"
+                            maxlength="50"
+                            type="email"
+                            id="email_id"
+                            name="email"
+                            placeholder="e.g. janedoe@gmail.com">
                     </div>
                     <div class="text_input">
                         <label for="phone_number_id">Phone number:</label>
-                        <input type="text" id="phone_number_id" name="phone_number">
+                        <input
+                            minlength="7"
+                            maxlength="11"
+                            type="text"
+                            id="phone_number_id"
+                            name="phone_number">
                     </div>
                     </div>
                     <h4>What is your preferred method of contact?</h4>
@@ -113,6 +143,8 @@
                     <div>
                         <label for="questions_id"><h4>Do you have any questions?</h4></label>
                         <textarea
+                            minlength="2"
+                            maxlength="500"
                             id="questions_id"
                             name="questions"
                             placeholder="Enter any questions you may have here"></textarea>
