@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    color: #121212;
+}
+
 #site_grid {
     display: grid;
     grid-template-columns: 1fr 800px 1fr;
@@ -92,7 +96,7 @@ ul li {
 }
 
 li a {
-    color: black;
+    color: #121212;
     text-decoration: none;
     font-family: 'Montserrat';
     font-weight: 600;
@@ -246,7 +250,7 @@ li a {
 
 #carousel_container h5,
 p {
-    color: black;
+    color: #121212;
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -348,7 +352,7 @@ h4 {
 /* FOOTER */
 
 footer {
-    background-color: black;
+    background-color: #121212;
     text-align: center;
     padding: 20px;
 }
