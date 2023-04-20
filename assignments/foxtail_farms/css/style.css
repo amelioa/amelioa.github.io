@@ -14,6 +14,7 @@ a {
 
 h1 {
     color: #121212;
+    font-size: 30pt;
 }
 
 #site_grid {
@@ -241,7 +242,8 @@ li a {
 }
 
 #carousel_container p {
-    font-family: 'Montserrat'
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 #carousel_container {
@@ -264,7 +266,7 @@ p {
 .card {
     border: 2px solid #e1a177;
     color: #e1a177;
-    margin: 48px 24px 24px;
+    margin: 24px 24px 24px 24px;
     padding: 12px 12px 24px;
     text-align: center;
     box-shadow: 4px 4px 8px 0px grey;
@@ -299,7 +301,7 @@ p {
     margin-top: 10px;
     margin-bottom: 20px;
     display: block;
-    width: 80%;
+    width: 150px;
     margin-left: auto;
     margin-right: auto
 }
@@ -315,16 +317,19 @@ a {
 /* GALLERY */
 
 #gallery_1 {
-    display: flex;
+    display: block;
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 1100px;
+    
 }
 
 #gallery_1 img {
     width: 30%;
     margin: 12px;
 }
+
+
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
@@ -345,11 +350,12 @@ a {
 #hero_content h1,
 h4 {
     color: white;
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
 }
 
 #hero_content a {
-    background-color: black;
+    background-color: #121212;
     color: white;
     border-radius: 24px;
     display: inline-block;
