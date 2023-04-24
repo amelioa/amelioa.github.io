@@ -116,12 +116,16 @@ hr {
 }
 
 .middle_margin {
+    margin: 0px 10px 10px 10px;
+}
+
+#middle_gender {
     margin: 0px 10px 0px 10px;
 }
 
-#two_inputs input {
-    box-sizing: border-box;
-    width: 120%
+#first_name input,
+#last_name input {
+    width: 225px
 }
 
 /* TEXT INPUTS */
@@ -186,11 +190,15 @@ input[type=submit]:hover {
 
 #submit_button {
     margin-top: 20px;
-    display: flex;  
-    justify-content: center;  
-    align-items: center;
+    width: 225px;
+    margin: 20px auto 0 auto;
 }
 
+/* INVALID INPUT */
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    background-color: rgb(252, 210, 210);
+}
 
 
 
