@@ -20,8 +20,8 @@
                         <h4>It's quick and easy.</h4>
                     </span>
                     <hr>
-                    <div class="flex_container flex_row">
-                            <div class="text_input" id="first_name_entry">
+                    <div class="flex_container flex_row" id="two_inputs">
+                            <div class="text_input">
                                 <input
                                 required
                                 minlength="5"
@@ -31,7 +31,7 @@
                                 name="first_name"
                                 placeholder="First name">
                             </div>
-                            <div class="text_input" id="last_name_entry">
+                            <div class="text_input">
                                 <input
                                 required
                                 minlength="5"
@@ -43,7 +43,7 @@
                             </div>
                     </div>
                     <div>
-                        <div class="text_input" id="email_entry">
+                        <div class="text_input" class="single_input">
                             <input
                             required
                             minlength="5"
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="text_input" id="password_entry">
+                        <div class="text_input" class="single_input">
                             <input
                             required
                             minlength="5"
@@ -69,9 +69,8 @@
                     <div>
                         <h5>Birthday <i class="fa fa-question-circle" style="font-size:16px"></i></h5>
                     </div>
-                    <div class="flex_container flex_row">
-                        <div>
-                            <select id="month_id" name="month" required class="boxes">
+                    <div class="flex_container flex_row three_inputs">
+                            <select id="month_id" name="month" required>
                                 <option value="none" disabled selected>
                                     Month
                                 </option>
@@ -88,9 +87,7 @@
                                 <option value="november">November</option>
                                 <option value="december">December</option>
                             </select>
-                        </div>
-                        <div>
-                            <select id="day_id" name="day" required class="boxes">
+                            <select id="day_id" name="day" required class="middle_margin">
                                 <option value="none" disabled selected>
                                     Day
                                 </option>
@@ -126,9 +123,7 @@
                                 <option value="1">30</option>
                                 <option value="1">31</option>
                             </select>
-                        </div>
-                        <div>
-                            <select id="year_id" name="year" required class="boxes">
+                            <select id="year_id" name="year" required>
                                 <option value="none" disabled selected>
                                     Year
                                 </option>
@@ -204,17 +199,16 @@
                                 <option value="2010">1941</option>
                                 <option value="2010">1940</option>
                             </select>
-                        </div>
                     </div>
                     <div>
                         <h5>Gender <i class="fa fa-question-circle" style="font-size:16px"></i></h5>
                     </div>
-                    <div class="flex_container flex_row">
+                    <div class="flex_container flex_row three_inputs">
                         <div class="radio boxes">
                             <label for="female_radio">Female</label>
                             <input type="radio" id="female_radio" name="gender_options" value="female" required>
                         </div>
-                        <div class="radio boxes">
+                        <div class="radio boxes middle_margin">
                             <label for="male_radio">Male</label>
                             <input type="radio" id="male_radio" name="gender_options" value="male" required>
                         </div>

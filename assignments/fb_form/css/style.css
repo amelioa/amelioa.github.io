@@ -1,3 +1,5 @@
+/* OVERALL  */
+
 #grid_container {
     display: grid;
     grid-template-columns: 1fr 500px 1fr;
@@ -25,100 +27,7 @@ form {
     border-radius: 10px;
 }
 
-img {
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.radio {
-    display: flex;
-    border: solid 1.5px gray;
-    padding: 10px;
-    width: 150px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.text_input input {
-    padding: 10px;
-    border-radius: 6px;
-    border: solid 1px gray;
-    font-size: 12pt;
-    margin-bottom: 10px;
-}
-
-#email_entry input,
-#password_entry input {
-    width: 440px;
-}
-
-#first_name_entry input,
-#last_name_entry input {
-    width: 200px;
-}
-
-.radio label {
-    font-size: 12pt;
-    font-family: sans-serif;
-}
-
-select {
-    padding: 10px;
-    border-radius: 6px;
-    width: 120px;
-    border: solid 1px gray;
-    font-size: 12pt;
-    margin-bottom: 10px;
-}
-
-.flex_container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.flex_row {
-    flex-direction: row;
-}
-
-#top_section {
-    text-align: center;
-}
-
-p {
-    font-size: 10pt;
-    color: rgb(93, 93, 93);
-    font-family: sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: #1c74f4
-}
-
-input[type=submit] {
-    background: #00a500;
-    border-radius: 8px;
-    border: none;
-    padding: 10px 60px;
-    color: white;
-    font-weight: bold;
-    font-size: 14pt;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background: linear-gradient(#79b26c, #5f8952);
-}
-
-#submit_button {
-    margin-top: 20px;
-    display: flex;  
-    justify-content: center;  
-    align-items: center;
-}
+/* TEXT */
 
 h3 {
     text-align: center;
@@ -150,13 +59,139 @@ h5 {
     margin: 0px 0px 10px 0px;
 }
 
+p {
+    font-size: 10pt;
+    color: rgb(93, 93, 93);
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1c74f4
+}
+
+/* TOP SECTION */
+
+img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top_section {
+    text-align: center;
+}
+
 hr {
     margin: -2px -20px 20px -20px;
     border: 0;
     border-top: 1px solid gray;
 }
 
-/* .boxes {
-    margin: 0px 30px 0px 0px
-} */
+/* FLEXBOX */
+
+.single_input,
+#two_inputs,
+.three_inputs {
+    display: flex;
+}
+
+.single_input input,
+#two_inputs input {
+    flex: 1;
+}
+
+.three_inputs input {
+    width: 33%;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+
+.middle_margin {
+    margin: 0px 10px 0px 10px;
+}
+
+#two_inputs input {
+    box-sizing: border-box;
+    width: 120%
+}
+
+/* TEXT INPUTS */
+
+.text_input input {
+    padding: 10px;
+    border-radius: 6px;
+    border: solid 1px gray;
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* SELECT */
+
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: solid 1px gray;
+    font-size: 12pt;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+/* RADIO */
+
+.radio {
+    display: flex;
+    border: solid 1.5px gray;
+    padding: 10px;
+    width: 150px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio label {
+    font-size: 12pt;
+    font-family: sans-serif;
+}
+
+/* BUTTON */
+
+input[type=submit] {
+    background: #00a500;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: linear-gradient(#79b26c, #5f8952);
+}
+
+#submit_button {
+    margin-top: 20px;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+}
+
+
+
+
 
