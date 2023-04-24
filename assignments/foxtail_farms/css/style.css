@@ -23,36 +23,36 @@ h1 {
     grid-auto-rows: minmax(50px,auto);
     grid-template-areas:
         "nav_area nav_area nav_area"
-        "hero_area hero_area hero_area"
+        "carousel_area carousel_area carousel_area"
         ". three_cards_area ."
-        ". carousel_area ."
         ". gallery_area ."
-        ". two_cards_area ."
+        "hero_area hero_area hero_area"
         "footer_area footer_area footer_area";
+}
+
+#three_cards,
+#gallery_container {
+    margin: 0px auto;
 }
 
 nav {
     grid-area: nav_area;
 }
 
-#hero {
-    grid-area: hero_area;
+#carousel_container {
+    grid-area: carousel_area;
 }
 
 #three_cards {
     grid-area: three_cards_area;
 }
 
-#carousel_container {
-    grid-area: carousel_area;
-}
-
 #gallery_container {
     grid-area: gallery_area;
 }
 
-#two_cards {
-    grid-area: two_cards_area;
+#hero {
+    grid-area: hero_area;
 }
 
 footer {
