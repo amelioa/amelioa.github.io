@@ -4,8 +4,9 @@
         <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Facebook Singup Form</title>
+        <title>Facebook Signup Form</title>
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <section id="grid_container">
@@ -20,7 +21,7 @@
                     </span>
                     <hr>
                     <div class="flex_container flex_row">
-                            <div class="text_input">
+                            <div class="text_input" id="first_name_entry">
                                 <input
                                 required
                                 minlength="5"
@@ -30,7 +31,7 @@
                                 name="first_name"
                                 placeholder="First name">
                             </div>
-                            <div class="text_input">
+                            <div class="text_input" id="last_name_entry">
                                 <input
                                 required
                                 minlength="5"
@@ -66,11 +67,11 @@
                         </div>
                     </div>
                     <div>
-                        Birthday
+                        <h5>Birthday <i class="fa fa-question-circle" style="font-size:16px"></i></h5>
                     </div>
                     <div class="flex_container flex_row">
                         <div>
-                            <select id="month_id" name="month" required>
+                            <select id="month_id" name="month" required class="boxes">
                                 <option value="none" disabled selected>
                                     Month
                                 </option>
@@ -89,7 +90,7 @@
                             </select>
                         </div>
                         <div>
-                            <select id="day_id" name="day" required>
+                            <select id="day_id" name="day" required class="boxes">
                                 <option value="none" disabled selected>
                                     Day
                                 </option>
@@ -127,7 +128,7 @@
                             </select>
                         </div>
                         <div>
-                            <select id="year_id" name="year" required>
+                            <select id="year_id" name="year" required class="boxes">
                                 <option value="none" disabled selected>
                                     Year
                                 </option>
@@ -206,18 +207,18 @@
                         </div>
                     </div>
                     <div>
-                        Gender
+                        <h5>Gender <i class="fa fa-question-circle" style="font-size:16px"></i></h5>
                     </div>
                     <div class="flex_container flex_row">
-                        <div class="radio">
+                        <div class="radio boxes">
                             <label for="female_radio">Female</label>
                             <input type="radio" id="female_radio" name="gender_options" value="female" required>
                         </div>
-                        <div class="radio">
+                        <div class="radio boxes">
                             <label for="male_radio">Male</label>
                             <input type="radio" id="male_radio" name="gender_options" value="male" required>
                         </div>
-                        <div class="radio">
+                        <div class="radio boxes">
                             <label for="custom_radio">Custom</label>
                             <input type="radio" id="custom_radio" name="gender_options" value="custom" required>
                         </div>

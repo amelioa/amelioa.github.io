@@ -21,7 +21,7 @@ body {
 form {
     background-color: white;
     box-shadow: 3px 3px 10px darkgray;
-    padding: 36px;
+    padding: 20px 20px;
     border-radius: 10px;
 }
 
@@ -36,8 +36,10 @@ img {
     display: flex;
     border: solid 1.5px gray;
     padding: 10px;
-    width: 80px;
-    border-radius: 6px
+    width: 150px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .text_input input {
@@ -50,12 +52,12 @@ img {
 
 #email_entry input,
 #password_entry input {
-    width: 400px
+    width: 440px;
 }
 
-.radio {
-    display: flex;
-    justify-content: space-between;
+#first_name_entry input,
+#last_name_entry input {
+    width: 200px;
 }
 
 .radio label {
@@ -66,13 +68,15 @@ img {
 select {
     padding: 10px;
     border-radius: 6px;
-    width: 105px;
+    width: 120px;
     border: solid 1px gray;
     font-size: 12pt;
+    margin-bottom: 10px;
 }
 
 .flex_container {
     display: flex;
+    justify-content: space-between;
 }
 
 .flex_row {
@@ -84,7 +88,7 @@ select {
 }
 
 p {
-    font-size: 9pt;
+    font-size: 10pt;
     color: rgb(93, 93, 93);
     font-family: sans-serif;
 }
@@ -125,17 +129,34 @@ h3 {
 }
 
 h1,
-h4 {
-    font-family: sans-serif
+h4,
+h5 {
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 0px;
 }
 
 h4 {
     color: rgb(93, 93, 93);
     font-weight: 350;
+    margin-top: 8px;
+}
+
+h5 {
+    color: rgb(93, 93, 93);
+    font-weight: 350;
+    margin: 0px 0px 10px 0px;
 }
 
 hr {
-    margin: 30px -36px;
+    margin: -2px -20px 20px -20px;
     border: 0;
     border-top: 1px solid gray;
 }
+
+/* .boxes {
+    margin: 0px 30px 0px 0px
+} */
+
