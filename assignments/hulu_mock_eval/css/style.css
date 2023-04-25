@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+}
+
+/* TEXT */
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1ce783;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24pt;
+    color: white;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+body {
+    margin: 0px;
+}
+
+/* NAV BAR */
+
+li a {
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px;
+}
+
+#logo {
+    width: 50px;
+    position: absolute;
+    left: 50px;
+}
+
+#log_in {
+    float: right;
+    margin-right: 50px;
+}
+
+/* HERO CONTENT */
+
+#center_hero_content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bottom_hero_content {
+    background-color: rgba(0,0,0,.7);
+}
+
+#bundle_image img {
+    width: 300px;
+}
+
+#hero_content {
+    background-image: url(../images/hulu-bg.jpeg);
+    background-size: cover;
+}
+
+.white_links a {
+    color: white;
+}
+
+.flex_container {
+    display: flex;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+
+/* CARDS SECTION */
+
+#cards_section {
+    background-color: black;
+}
+
+#four_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards_section_text {
+    text-align: center;
+}
+
+.card {
+    width: 200px;
+    position: relative;
+    margin: 10px;
+}
+  
+.card-content {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    padding: 16px;
+    color: #fff;
+}
+  
+.card-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+  
+.card-text {
+    margin-top: 0;
+}
+
+#card_image_1 {
+    height: 306px;
+    width: 200px;
+    background-image: url(../images/bobsburgers.jpeg); 
+    background-size: cover;
+    background-position: center;
+}
+#card_image_2 {
+    height: 306px;
+    width: 200px;
+    background-image: url(../images/prey.jpeg); 
+    background-size: cover;
+    background-position: center;
+}
+#card_image_3 {
+    height: 306px;
+    width: 200px;
+    background-image: url(../images/handmaidstale.jpeg); 
+    background-size: cover;
+    background-position: center;
+}
+#card_image_4 {
+    height: 306px;
+    width: 200px;
+    background-image: url(../images/houseofdragon.jpeg); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* BUTTONS */
+
+#get_them_both_button {
+    background-color: #1ce783;
+    color: black;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0px 160px;
+    min-width: 150px;
+    text-decoration: none;
+}
+
+#get_all_three_button {
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    min-width: 150px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* OTHER */
+
+#log_in a {
+    color: rgb(193, 193, 193);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#bottom_hero_content {
+    padding: 18px;
+}
