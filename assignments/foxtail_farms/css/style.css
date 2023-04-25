@@ -43,7 +43,7 @@ nav {
     grid-area: carousel_area;
 }
 
-#three_cards {
+#technology {
     grid-area: three_cards_area;
 }
 
@@ -317,8 +317,8 @@ a {
 /* GALLERY */
 
 #gallery_1 {
-    display: block;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     max-height: 1100px;
     
@@ -328,8 +328,6 @@ a {
     width: 30%;
     margin: 12px;
 }
-
-
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
