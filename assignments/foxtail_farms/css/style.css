@@ -389,11 +389,10 @@ footer p {
         grid-template-columns: 1fr;
         grid-template-areas:
             "nav_area"
-            "hero_area"
-            "three_cards_area"
             "carousel_area"
+            "three_cards_area"
             "gallery_area"
-            "two_cards_area"
+            "hero_area"
             "footer_area";
     }
 
