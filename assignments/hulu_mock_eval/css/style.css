@@ -59,6 +59,7 @@ ul li {
 #logo {
     width: 50px;
     float: left;
+    margin-left: 40px;
 }
 
 #log_in {
@@ -244,3 +245,9 @@ ul li {
     color: white;
 }
 
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+  
