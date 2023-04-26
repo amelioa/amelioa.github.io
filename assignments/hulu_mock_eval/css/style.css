@@ -83,6 +83,10 @@ ul li {
     align-items: center;
 }
 
+#group {
+    margin: auto;
+}
+
 #bundle_image {
     margin: 15px;
 }
