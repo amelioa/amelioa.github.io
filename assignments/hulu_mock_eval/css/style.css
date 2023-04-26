@@ -43,6 +43,7 @@ body {
 
 /* NAV BAR */
 
+
 li a {
     text-decoration: none;
 }
@@ -53,7 +54,7 @@ nav li {
 }
 
 ul li {
-    padding: 10px;
+    padding: 30px 10px;
 }
 
 #logo {
