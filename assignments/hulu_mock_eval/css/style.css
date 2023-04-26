@@ -239,3 +239,7 @@ ul li {
 #cards_section {
     margin: 30px;
 }
+
+#right_section a {
+    color: white;
+}
