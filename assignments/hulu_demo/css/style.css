@@ -1,0 +1,95 @@
+
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#hero {
+    background-image: url(../images/hulu-bg.jpeg);
+}
+
+nav {
+    padding: 24px 36px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav img {
+    width: 60px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.5s;
+}
+
+nav a:hover {
+    background-color: rgb(101, 101, 101);
+}
+
+#hero_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h5 {
+    color: #00ED82;
+}
+
+#hero_content p {
+    color: white;
+    font-size: 22px;
+}
+
+.button_link {
+    display: inline-block;
+    background-color: #00ED82;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 8px;
+    width: 670px;
+    text-align: center;
+    transition: opacity 0.5s;
+}
+
+.button_link:hover {
+    opacity: 0.5;
+}
+
+.small_link,
+.medium_link {
+    color: white;
+    display: inline-block;
+}
+
+.small_link {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.medium_link {
+    margin-top: 28px;
+}
+
+footer {
+    display: flex;
+}
+
+footer img {
+
+}
