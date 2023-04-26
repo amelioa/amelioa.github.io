@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-    margin: 0;
+    background-color: black;
 }
 
 /* TEXT */
@@ -61,10 +61,10 @@ ul li {
     left: 50px;
 }
 
-#log_in {
+/* #log_in {
     float: right;
     margin-right: 50px;
-}
+} */
 
 /* HERO CONTENT */
 
@@ -74,10 +74,31 @@ ul li {
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 #bottom_hero_content {
     background-color: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+}
+
+#bundle_image {
+    margin: 15px;
+}
+
+#middle_section {
+    margin: 15px;
+}
+
+#right_section {
+    margin: 15px;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #bundle_image img {
