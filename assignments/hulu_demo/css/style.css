@@ -1,11 +1,12 @@
 
 body {
     margin: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #hero {
-    background-image: url(../images/hulu-bg.jpeg);
+    background-image: url("../images/hulu-bg.jpeg");
+    background-size: cover;
 }
 
 nav {
@@ -29,19 +30,19 @@ nav a {
     display: inline-block;
     color: white;
     text-decoration: none;
-    padding: 8px;
+    padding: 10px;
     border-radius: 8px;
     transition: background-color 0.5s;
 }
 
 nav a:hover {
-    background-color: rgb(101, 101, 101);
+    background-color: rgb(93, 92, 92);
 }
 
 #hero_content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 h5 {
@@ -51,6 +52,7 @@ h5 {
 #hero_content p {
     color: white;
     font-size: 22px;
+    text-align: center;
 }
 
 .button_link {
@@ -58,10 +60,10 @@ h5 {
     background-color: #00ED82;
     color: black;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 14px;
     padding: 16px;
-    border-radius: 8px;
+    border-radius: 6px;
     width: 670px;
     text-align: center;
     transition: opacity 0.5s;
@@ -83,13 +85,73 @@ h5 {
 }
 
 .medium_link {
-    margin-top: 28px;
+    margin-top: 28px
 }
 
 footer {
     display: flex;
+    align-items: center;
+    padding: 12px 36px;
+    margin-top: 60px;
+    background-color: rgba(0,0,0, .5);
+}
+
+footer #footer_image_container {
+    width: 250px;
 }
 
 footer img {
-
+    width: 100%;
 }
+
+.clear_button_link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition:
+        background-color 0.5s,
+        color 0.5s;
+}
+
+.clear_button_link:hover {
+    background: white;
+    color: black;
+}
+
+.tiny_link {
+    display: block;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+#footer_center {
+    margin: 0px 24px;
+    flex: 1;
+}
+
+#footer_center p {
+    color: white;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+#footer_center h5 {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .button_link {
+        width: 80%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 36px;
+    }
+}
+

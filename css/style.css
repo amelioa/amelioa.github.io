@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+}
+
+#hero_content {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/AdobeStock_556743275\ [Converted].jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#hero_content h1 {
+    font-family: sans-serif;
+    font-size: 40pt;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(139, 77, 226);
+}
+
+
