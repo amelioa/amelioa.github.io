@@ -49,6 +49,7 @@ li a {
 
 nav li {
     list-style-type: none;
+    display: inline-block
 }
 
 ul li {
@@ -57,8 +58,12 @@ ul li {
 
 #logo {
     width: 50px;
-    position: absolute;
-    left: 50px;
+    float: left;
+}
+
+#log_in {
+    float: right;
+    margin-right: 40px;
 }
 
 /* #log_in {
