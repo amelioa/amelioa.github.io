@@ -79,7 +79,7 @@ nav img {
 }
 
 .card {
-    width: 250px;
+    width: 100%;
     height: 200px;
     background-color: #42998F;
     display: flex;
@@ -87,7 +87,6 @@ nav img {
     justify-content: center;
     border-radius: 0px;
     border: 0px;
-    margin: 10px;
     white-space: nowrap;
     aspect-ratio: 1;
 }
@@ -129,4 +128,23 @@ nav img {
 #footer_bottom {
     background-color: #8D1A6A
 }
+
+#five_cards a {
+    text-decoration: none;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: white;
+    opacity: 1;
+    width: 100px;
+    height: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carousel-indicators .active {
+    background-color: #8D1A6A;
+}
+
+
 
