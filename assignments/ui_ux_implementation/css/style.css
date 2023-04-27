@@ -9,11 +9,14 @@ nav {
     background-color: #0E2B59;
     position: sticky;
     white-space: nowrap;
+    position: relative;
+    z-index: 2;
 }
 
 ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
     padding: 0px;
     max-width: 800px;
@@ -34,12 +37,6 @@ li a {
     position: relative;
     z-index: 1;
 }
-
-nav {
-    position: relative;
-    z-index: 2;
-}
-
 
 nav img {
     height: 30px;
@@ -69,7 +66,7 @@ nav img {
 .customize_dropdown_container:hover .customize_dropdown_menu {
     opacity: 1;
     visibility: visible;
-    top: 140%;
+    top: 162%;
 }
 
 .material-symbols-outlined {
@@ -91,8 +88,8 @@ nav img {
     border-radius: 0px;
     border: 0px;
     margin: 10px;
-    padding: 0px 140px;
     white-space: nowrap;
+    aspect-ratio: 1;
 }
 
 #five_cards {
@@ -101,6 +98,28 @@ nav img {
     grid-auto-rows: auto;
     grid-gap: 1rem;
     margin: 20px;
+}
+
+.flex_container {
+    display: flex;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+
+#hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%,rgba(255, 255, 255, 0.5) 100%),
+        url("../images/AdobeStock_167035488.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 #footer_main {
