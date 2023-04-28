@@ -1,16 +1,39 @@
 /* Task 8 - Write your code solution below */
 
+#t8_box1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 /* Task 9 - Write your code solution below */
 
+#t9_box1 {
+    margin: 50px;
+}
 
 /* Task 10 - Write your code solution below */
 
+#t10_box5 {
+    margin-left: 150px;
+}
 
 /* Task 11 - Write your code solution below */
 
+#t11_box4,
+#t11_box5,
+#t11_box6 {
+    margin-top: 100px;
+}
 
 /* Task 12 - Write your code solution below */
 
+#t12_box2 {
+    margin-left: 130px;
+    margin-right: 130px;
+}
 
 /* Task 13 - Write your code solution below */
+
+#t13_box3 {
+    margin-left: 250px;
+}
