@@ -54,45 +54,51 @@
                 </li>
             </ul>
         </nav>
-        <div>
+        <div id="choose_customizations_box">
             <h1>Choose Customizations</h1>
             <h4>Metal</h4>
-            <div>
-                <input type="radio" id="14k_gold_radio" name="metal" value="14k_gold">
-                <label for="14k_gold_radio">14K Gold</label>
-            </div>
-            <div>
-                <input type="radio" id="18k_gold_radio" name="metal" value="18k_gold">
-                <label for="18k_gold_radio">18K Gold</label>
-            </div>
-            <div>
-                <input type="radio" id="white_gold_radio" name="metal" value="white_gold">
-                <label for="white_gold_radio">White Gold</label>
+            <div class="customizations flex_container flex_row">
+                <div>
+                    <input type="radio" id="14k_gold_radio" name="metal" value="14k_gold">
+                    <label for="14k_gold_radio">14K Gold</label>
+                </div>
+                <div>
+                    <input type="radio" id="18k_gold_radio" name="metal" value="18k_gold">
+                    <label for="18k_gold_radio">18K Gold</label>
+                </div>
+                <div>
+                    <input type="radio" id="white_gold_radio" name="metal" value="white_gold">
+                    <label for="white_gold_radio">White Gold</label>
+                </div>
             </div>
             <h4>Band Width</h4>
-            <div>
-                <input type="radio" id="2mm_radio" name="band_width" value="2mm">
-                <label for="2mm_radio">2mm</label>
-            </div>
-            <div>
-                <input type="radio" id="4mm_radio" name="band_width" value="4mm">
-                <label for="4mm_radio">4mm</label>
-            </div>
-            <div>
-                <input type="radio" id="6mm_radio" name="band_width" value="6mm">
-                <label for="6mm_radio">6mm</label>
-            </div>
-            <div>
-                <input type="radio" id="8mm_radio" name="band_width" value="8mm">
-                <label for="8mm_radio">8mm</label>
+            <div class="customizations flex_container flex_row">
+                <div>
+                    <input type="radio" id="2mm_radio" name="band_width" value="2mm">
+                    <label for="2mm_radio">2mm</label>
+                </div>
+                <div>
+                    <input type="radio" id="4mm_radio" name="band_width" value="4mm">
+                    <label for="4mm_radio">4mm</label>
+                </div>
+                <div>
+                    <input type="radio" id="6mm_radio" name="band_width" value="6mm">
+                    <label for="6mm_radio">6mm</label>
+                </div>
+                <div>
+                    <input type="radio" id="8mm_radio" name="band_width" value="8mm">
+                    <label for="8mm_radio">8mm</label>
+                </div>
             </div>
             <h4>Engraving</h4>
-            <div class="text_input">
-                <!-- <label for="engraving_id">Engraving</label> -->
-                <input type="text" id="graving_id" name="engraving">
+            <div id="engraving_text_input">
+                <div class="text_input">
+                    <!-- <label for="engraving_id">Engraving</label> -->
+                    <input type="text" id="graving_id" name="engraving">
+                </div>
+                <a href="cart_page.html" class="navy_button">ADD TO CART</a>
+                <a href="checkout_page.html" class="navy_button">BUY NOW</a>
             </div>
-            <a href="cart_page.html"><button>ADD TO CART</button></a>
-            <a href="checkout_page.html"><button>BUY NOW</button></a>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
