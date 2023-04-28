@@ -28,12 +28,12 @@
 /* Task 12 - Write your code solution below */
 
 #t12_box2 {
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Task 13 - Write your code solution below */
 
 #t13_box3 {
-    margin-left: 250px;
+    margin-left: auto;
 }
