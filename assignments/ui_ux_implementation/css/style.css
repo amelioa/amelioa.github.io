@@ -146,5 +146,23 @@ nav img {
     background-color: #8D1A6A;
 }
 
+#payment_methods img {
+    width: 100px;
+}
 
+.payment_option {
+    width: 225px;
+    height: 100px;
+    border-radius: 6px;
+    border: solid 2px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
 
+input {
+    border-radius: 5px;
+    border: solid 2px gray;
+    padding: 4px;
+}
