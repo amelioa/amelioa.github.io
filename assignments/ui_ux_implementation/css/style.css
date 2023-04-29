@@ -261,6 +261,45 @@ hr {
 #footer_main_right {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
 }
 
+#email_input input {
+    border: 2px solid #8D1A6A;
+    margin-right: 5px;
+}
 
+#subscribe_button input {
+    background-color: #8D1A6A;
+    color: white;
+    border: none;
+    padding: 6px 15px 6px 15px;
+}
+
+#footer_main {
+    padding: 20px;
+}
+
+#footer_main h5 {
+    font-size: 10pt;
+}
+
+#left_section {
+    margin-right: 40px;
+}
+
+#footer_bottom h6 {
+    color: white;
+}
+
+#footer_bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color:#0E2B59;
+    font-size: 25pt;
+}
