@@ -136,8 +136,8 @@ nav img {
 .carousel-indicators [data-bs-target] {
     background-color: white;
     opacity: 1;
-    width: 100px;
-    height: 6px;
+    width: 16%;
+    height: 0.6vh;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -278,6 +278,8 @@ hr {
 
 #footer_main {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #footer_main h5 {
@@ -303,3 +305,29 @@ button {
     color:#0E2B59;
     font-size: 25pt;
 }
+
+/* #footer_bottom {
+    display: flex;
+    
+}
+
+#footer_bottom .left {
+    flex: 1;
+}
+
+#footer_bottom .right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+} */
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    flex: 1;
+    max-width: none;
+}
+
+
+
