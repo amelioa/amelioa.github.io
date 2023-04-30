@@ -311,6 +311,8 @@ button {
     
 }
 
+#
+
 #footer_bottom .left {
     flex: 1;
 }
@@ -329,5 +331,15 @@ footer ul {
     max-width: none;
 }
 
+#checkout_inputs label {
+    font-weight: 600;
+}
 
+* {
+    border: 1px solid red;
+}
+
+#email input {
+    width: 50%;
+}
 
