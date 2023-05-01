@@ -92,13 +92,14 @@ a {
 
 #trending_gallery {
     columns: 3 auto;
-    column-gap: 10px;
+    column-gap: 20px;
     margin: 50px;
 }
 
 #trending_gallery img {
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 #trending {
