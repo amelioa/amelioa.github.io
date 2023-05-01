@@ -1,0 +1,164 @@
+body {
+    background-color: #040714;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #040714;
+    padding: 6px 40px 6px 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav img {
+    width: 20%
+}
+
+#email_sign_up {
+    display: flex;
+    justify-content: center;
+}
+
+#sign_up_button {
+    background-color: #0063e5;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+#log_in_button {
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+#hero_section {
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(4,7,20,255)),
+    url(../images/backgroundLarge.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+#three_logos {
+    width: 40%;
+}
+
+#five_logos {
+    width: 40%;
+}
+
+.flex_container {
+    display: flex;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+
+p,
+h5,
+a {
+    color: white;
+}
+
+#submit_button input {
+    border: none;
+    background-color: #0063e5;
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px;
+    color: white;
+}
+
+/* #email_input input {
+    border: none;
+    background-color: #31343e;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    width: 300%;
+} */
+
+input[type="email"] {
+    display: inline-block;
+}
+
+input[type="submit"] {
+    display: inline-block;
+}
+
+
+
+#hero_section {
+    padding: 100px;
+}
+
+#trending_gallery {
+    columns: 3 auto;
+    column-gap: 10px;
+    margin: 50px;
+}
+
+#trending_gallery img {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+#trending {
+    margin-top: 30px;
+}
+
+#trending_nav {
+    display: flex;
+    justify-content: center;
+}
+
+#trending_nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.no_underline {
+    text-decoration: none;
+}
+
+#trending_tab {
+    text-decoration-thickness: 5px;
+    text-underline-offset: 8px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer p {
+    color: #575962
+}
+
+footer a {
+    text-decoration: none;
+    margin: 10px;
+    color: #575962;
+}
+
+footer div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer img {
+    width: 8%;
+}

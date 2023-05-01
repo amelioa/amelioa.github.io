@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Document</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <div>
+                    <li>
+                        <img src="images/disneyPlusLogo.svg" alt="Disney+ logo">
+                    </li>
+                </div>
+                <div class="flex_container flex_row">
+                    <li>
+                        <a id="sign_up_button" href="#">SIGN UP NOW</a>
+                    </li>
+                    <li>
+                        <a id="log_in_button" href="#">LOG IN</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <section id="hero_section">
+            <div id="hero_content">
+                <img id="three_logos" src="images/huluDisneyESPN.png" alt="Hulu, Disney+, and ESPN+ logo">
+                <p>Enter your email to create or restart your subscription.</p>
+                <form id="email_sign_up">
+                    <!-- <div class="flex_container flex_row">
+                        <div id="email_input" class="text_input">
+                            <input type="email" id="email_id" name="email" placeholder="Email">
+                        </div>
+                        <div id="submit_button">
+                            <input type="submit" value="GET THE DISNEY BUNDLE">
+                        </div>
+                    </div> -->
+                    <div id="email_input">
+                    <input type="email" id="email_id" name="email" required>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+                <p>All of these and more now steaming. <a href="#">Terms Apply</a></p>
+                <img id="five_logos" src="images/disneyAndMore.png" alt="Disney + Pixar + Marvel + Star Wars + National Geographic logos">
+                <a href="#"><h5>View All Plan Options</h5></a>
+            </div>
+        </section>
+        <section id="trending">
+            <div id="trending_nav">
+                <a id="trending_tab" href="#">TRENDING</a>
+                <a class="no_underline" href="#">NEW ON DISNEY+</a>
+                <a class="no_underline" href="#">COMING SOON</a>
+            </div>
+            <div id="trending_gallery">
+                <img src="images/wakandaForever.jpg" alt="Marvel Black Panther Wakanda Forever">
+                <img src="images/andor.jpg" alt="Star Wars Andor">
+                <img src="images/turningRed.jpg" alt="Disney Turning Red">
+                <img src="images/fireOfLove.jpg" alt="National Geographic Fire of Love">
+                <img src="images/encanto.jpg" alt="Disney Encanto">
+                <img src="images/zootopiaPlus.jpg" alt="Disney Zootopia+">
+            </div>
+        </section>
+        <footer>
+            <img src="images/disneyPlusLogo.svg" alt="Disney+ logo">
+            <div>
+                <a href="#"><i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#">Subscriber Agreement</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Your California Privacy Rights</a>
+                <a href="#">Do Not Sell My Personal Information</a>
+                <a href="#">Children's Online Privacy Policy</a>
+            </div>
+            <div>
+                <a href="#">Closed Captioning</a>
+                <a href="#">Internet-Based Ads</a>
+                <a href="#">Supported Devices</a>
+                <a href="#">Help</a>
+                <a href="#">Gift Disney+</a>
+                <a href="#">About Us</a>
+                <a href="#">Disney+ Partner Program</a>
+                <a href="#">Disney Bundle</a>
+            </div>
+            <p>Content and platform availability may bary by region.</p>
+            <p>&copy; Disney. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
