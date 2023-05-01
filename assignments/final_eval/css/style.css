@@ -6,7 +6,7 @@ body {
 
 nav {
     background-color: #040714;
-    padding: 6px 40px 6px 40px;
+    padding: 8px 40px 8px 40px;
 }
 
 nav ul {
@@ -22,10 +22,7 @@ nav img {
     width: 20%
 }
 
-#email_sign_up {
-    display: flex;
-    justify-content: center;
-}
+
 
 #sign_up_button {
     background-color: #0063e5;
@@ -80,25 +77,16 @@ a {
     border-radius: 0px 5px 5px 0px;
     padding: 10px;
     color: white;
+    margin-left: 142%;
 }
 
-/* #email_input input {
+#email_input input {
     border: none;
     background-color: #31343e;
     padding: 10px;
     border-radius: 5px 0px 0px 5px;
-    width: 300%;
-} */
-
-input[type="email"] {
-    display: inline-block;
+    width: 250%;
 }
-
-input[type="submit"] {
-    display: inline-block;
-}
-
-
 
 #hero_section {
     padding: 100px;
@@ -162,3 +150,38 @@ footer div {
 footer img {
     width: 8%;
 }
+
+.buttonIn {
+    width: 600px;
+    position: relative;
+}
+
+input {
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #31343e;
+    font-size: 12pt;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    border-radius: 0px 5px 5px 0px;
+    right: -10px;
+    z-index: 2;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: #0063e5;
+}
+
+#email_sign_up {
+    display: flex;
+    justify-content: center;
+}
+
