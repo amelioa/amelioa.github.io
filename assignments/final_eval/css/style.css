@@ -22,8 +22,6 @@ nav img {
     width: 20%
 }
 
-
-
 #sign_up_button {
     background-color: #0063e5;
     border-radius: 5px;
@@ -185,3 +183,20 @@ button {
     justify-content: center;
 }
 
+@media only screen and (max-width: 480px) {
+    #trending_gallery {
+        columns: 2 auto;
+        column-gap: 10px;
+        margin: 50px;
+    }
+    
+    #trending_gallery img {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    #trending_nav a {
+        white-space: nowrap;
+    }
+
+}
