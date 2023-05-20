@@ -419,7 +419,7 @@ h4 {
     border: solid 2px #333333;
     border-radius: 15px;
     padding: 30px;
-    margin: 10px;
+    margin: 0 auto;
     text-align: center;
     width: 200px;
 }
