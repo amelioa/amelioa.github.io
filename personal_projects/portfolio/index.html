@@ -6,13 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Alyssa Amelio | Graphic Designer & Web Developer</title>
         <link href="css/style.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <header id="hero">
             <nav>
                 <ul>
                     <li id="alyssa_amelio_home">
-                        <a href="index.html">Alyssa Amelio</a>
+                        <div id="status">
+                            <div class="circle red"></div>
+                            <span id="test">Looking For Internships</span>
+                            </div>
+                        <!-- <a href="index.html">Alyssa Amelio</a> -->
                     </li>
                     <li id="home">
                         <a href="index.html">Home</a>
@@ -34,12 +39,14 @@
                     </li>
                 </ul>
             </nav>
-            <div id="hero_content">
+            <div id="hero_content_container">
                 <img src="images/alyssa_amelio.svg" id="alyssa_amelio">
                 <h1 id="typeahead">Placeholder</h1>
                 <!-- <p>Graphic Design and Web Development student</p>
                 <a id="resume_button" href="#">Resume</a> -->
             </div>
+            <!-- <div class="spinner scroll-down"> <a class="animate"></a> </div> -->
+            <div class="scroll-down"></div>
         </header>
         <section id="about_me">
             <h1>About Me</h1>
@@ -57,12 +64,75 @@
                     </p>
                 </div>
             </div>
+            <div id="status">
+            <div class="circle red"></div>
+            <span id="test">Looking For Internships</span>
+            </div>
         </section>
         <section id="skills">
             <h1>Skills</h1>
+            <h2>Proficient in</h2>
+            <div class="flex_container">
+                <div class="skill_group">
+                    <img src="images/AdobeIllustrator.png">
+                    <h4>Illustrator</h4>
+                </div>
+                <div class="skill_group">
+                    <img src="images/AdobePhotoshop.png">
+                    <h4>Photoshop</h4>
+                </div>
+                <div class="skill_group">
+                    <img src="images/AdobeXd.png">
+                    <h4>Xd</h4>
+                </div>
+            </div>
+            <h2>Certified in</h2>
+            <div class="flex_container">
+                <div class="skill_group">
+                    <img src="images/MicrosoftWord.png">
+                    <h4>Microsoft Word</h4>
+                </div>
+                <div class="skill_group">
+                    <img src="images/MicrosoftPowerpoint.png">
+                    <h4>Microsoft Powerpoint</h4>
+                </div>
+                <div class="skill_group">
+                    <img src="images/MicrosoftOutlook.png">
+                    <h4>Microsoft Outlook</h4>
+                </div>
+            </div>
+            <h2>Fundamental knowledge of</h2>
+            <div class="flex_container">
+                <div class="skill_group">
+                    <img src="images/HTML5Icon.png">
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill_group">
+                    <img src="images/CSS3Icon.png">
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill_group">
+                    <img src="images/WordPressIcon.png">
+                    <h4>WordPress</h4>
+                </div>
+            </div>
         </section>
         <section id="my_work">
             <h1>My Work</h1>
+            <div id="card_section">
+            <div class="card" id="illustrator_card">
+                <h3>Illustrator Work</h3>
+                <a href="#">View Gallery</a>
+            </div>
+            <div class="card" id="photoshop_card">
+                <h3>Photoshop Work</h3>
+                <a href="#">View Gallery</a>
+            </div>
+            <div class="card" id="html_css_card">
+                <h3>HTML & CSS Work</h3>
+                <a href="#">View Gallery</a>
+            </div>
+            </div>
         </section>
         <section>
             <h1>Blog</h1>
