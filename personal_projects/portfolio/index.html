@@ -7,6 +7,8 @@
         <title>Alyssa Amelio | Graphic Designer & Web Developer</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     </head>
     <body>
         <header id="hero">
@@ -15,7 +17,7 @@
                     <li id="alyssa_amelio_home">
                         <div id="status">
                             <div class="circle red"></div>
-                            <span id="test">Looking For Internships</span>
+                            <span id="test"><a href="#contact">Looking For Internships</a></span>
                             </div>
                         <!-- <a href="index.html">Alyssa Amelio</a> -->
                     </li>
@@ -64,59 +66,60 @@
                     </p>
                 </div>
             </div>
-            <div id="status">
-            <div class="circle red"></div>
-            <span id="test">Looking For Internships</span>
-            </div>
         </section>
+        <hr>
         <section id="skills">
             <h1>Skills</h1>
-            <h2>Proficient in</h2>
-            <div class="flex_container">
-                <div class="skill_group">
-                    <img src="images/AdobeIllustrator.png">
-                    <h4>Illustrator</h4>
+            <div class="flex_container" id="skill_group_section">
+                <div class="skills_content" id="GD_skill">
+                    <h3 class="skills_title"><i class="fa-solid fa-code" style="color: #333333;"></i> Graphic Designer</h3>
+                    <div class="flex_container">
+                        <div class="skill_group">
+                            <div class="skill_box">
+                                <img src="images/IllustratorIcon.svg">
+                            </div>
+                            <h4 class="skill_name">Illustrator</h4>
+                        </div>
+                        <div class="skill_group">
+                            <div class="skill_box">
+                                <img src="images/PhotoshopIcon.svg">
+                            </div>
+                            <h4 class="skill_name">Photoshop</h4>
+                        </div>
+                        <div class="skill_group">
+                            <div class="skill_box">
+                                <img src="images/XdIcon.svg">
+                            </div>
+                            <h4 class="skill_name">Xd</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill_group">
-                    <img src="images/AdobePhotoshop.png">
-                    <h4>Photoshop</h4>
-                </div>
-                <div class="skill_group">
-                    <img src="images/AdobeXd.png">
-                    <h4>Xd</h4>
-                </div>
-            </div>
-            <h2>Certified in</h2>
-            <div class="flex_container">
-                <div class="skill_group">
-                    <img src="images/MicrosoftWord.png">
-                    <h4>Microsoft Word</h4>
-                </div>
-                <div class="skill_group">
-                    <img src="images/MicrosoftPowerpoint.png">
-                    <h4>Microsoft Powerpoint</h4>
-                </div>
-                <div class="skill_group">
-                    <img src="images/MicrosoftOutlook.png">
-                    <h4>Microsoft Outlook</h4>
-                </div>
-            </div>
-            <h2>Fundamental knowledge of</h2>
-            <div class="flex_container">
-                <div class="skill_group">
-                    <img src="images/HTML5Icon.png">
-                    <h4>HTML</h4>
-                </div>
-                <div class="skill_group">
-                    <img src="images/CSS3Icon.png">
-                    <h4>CSS</h4>
-                </div>
-                <div class="skill_group">
-                    <img src="images/WordPressIcon.png">
-                    <h4>WordPress</h4>
+                <div class="skills_content" id="WD_skill">
+                    <h3 class="skills_title"><i class="fa-solid fa-pen-nib" style="color: #333333;"></i> Web Developer</h3>
+                    <div class="flex_container">
+                        <div class="skill_group">
+                            <div class="skill_box">
+                                <img src="images/HTMLIcon.svg">
+                            </div>
+                            <h4 class="skill_name">HTML</h4>
+                        </div>
+                        <div class="skill_group">
+                            <div class="skill_box">
+                                <img src="images/CSSIcon.svg">
+                            </div>
+                            <h4 class="skill_name">CSS</h4>
+                        </div>
+                        <div class="skill_group">
+                            <div class="skill_box">
+                                <img src="images/WordPressIcon.svg">
+                            </div>
+                            <h4 class="skill_name">Wordpress</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <hr>
         <section id="my_work">
             <h1>My Work</h1>
             <div id="card_section">
@@ -134,13 +137,18 @@
                 </div>
             </div>
         </section>
-        <section>
+        <hr>
+        <section id="blog">
             <h1>Blog</h1>
         </section>
-        <section>
-            <h1>Contact</h1>
+        <hr>
+        <section id="contact">
+            <h1 id="contact">Contact</h1>
         </section>
-
+        <footer>
+            
+        </footer>
+       
         <script src="js/portfolio.js"></script>
     </body>
 </html>
