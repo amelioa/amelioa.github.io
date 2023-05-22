@@ -18,6 +18,8 @@ let typeaheadContent = [
     "Graphic Design|",
     "Graphic Designe|",
     "Graphic Designer|",
+    "Graphic Designer|",
+    "Graphic Designer|",
     "Graphic Designer",
     "Graphic Designer|",
     "Graphic Designe|",
@@ -49,6 +51,9 @@ let typeaheadContent = [
     "Web Develope|",
     "Web Developer|",
     "Web Developer|",
+    "Web Developer|",
+    "Web Developer",
+    "Web Developer|",
     "Web Develope|",
     "Web Develop|",
     "Web Devel|",
@@ -68,6 +73,9 @@ let typeaheadContent = [
     "Studen|",
     "Student|",
     "Student|",
+    "Student|",
+    "Student",
+    "Student|",
     "Studen|",
     "Stude|",
     "Stud|",
@@ -82,6 +90,8 @@ let typeaheadContent = [
     "Creat|",
     "Creati|",
     "Creativ|",
+    "Creative|",
+    "Creative|",
     "Creative|",
     "Creative",
     "Creative|",
@@ -108,4 +118,4 @@ function displayTypeahead() {
     }
 }
 
-setInterval(displayTypeahead, 150);
+setInterval(displayTypeahead, 100);

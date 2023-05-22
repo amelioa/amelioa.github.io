@@ -50,6 +50,7 @@
             <!-- <div class="spinner scroll-down"> <a class="animate"></a> </div> -->
             <div class="scroll-down"></div>
         </header>
+        <div id="site_grid">
         <section id="about_me">
             <h1>About Me</h1>
             <div id="about_me_content">
@@ -67,7 +68,6 @@
                 </div>
             </div>
         </section>
-        <hr>
         <section id="skills">
             <h1>Skills</h1>
             <div class="flex_container" id="skill_group_section">
@@ -119,36 +119,69 @@
                 </div>
             </div>
         </section>
-        <hr>
         <section id="my_work">
             <h1>My Work</h1>
             <div id="card_section">
                 <div class="card" id="illustrator_card">
                     <h3>Illustrator Work</h3>
-                    <a href="#">View Gallery</a>
+                    <a class="view_gallery_button" href="#">View Gallery</a>
                 </div>
                 <div class="card" id="photoshop_card">
                     <h3>Photoshop Work</h3>
-                    <a href="#">View Gallery</a>
+                    <a class="view_gallery_button" href="#">View Gallery</a>
                 </div>
                 <div class="card" id="html_css_card">
                     <h3>HTML & CSS Work</h3>
-                    <a href="#">View Gallery</a>
+                    <a class="view_gallery_button" href="#">View Gallery</a>
                 </div>
             </div>
         </section>
-        <hr>
         <section id="blog">
             <h1>Blog</h1>
         </section>
-        <hr>
         <section id="contact">
             <h1 id="contact">Contact</h1>
+            <form>
+                <div class="text_input">
+                    <label for="name_id">Name</label>
+                    <input
+                        required
+                        minlength="2"
+                        maxlength="50"
+                        type="text"
+                        id="name_id"
+                        name="name"
+                        placeholder="Enter your name">
+                </div>
+                <div class="text_input">
+                    <label for="email_id">Email</label>
+                    <input
+                        required
+                        type="email"
+                        id="email_id"
+                        name="email"
+                        placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="message_id">Message</label>
+                    <textarea
+                        required
+                        minlength="15"
+                        maxlength="500"
+                        id="message_id"
+                        name="message"
+                        placeholder="Enter your message">
+                    </textarea>
+                </div>
+                <div id="submit_button">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
         </section>
+        </div>
         <footer>
-            
+
         </footer>
-       
         <script src="js/portfolio.js"></script>
     </body>
 </html>
