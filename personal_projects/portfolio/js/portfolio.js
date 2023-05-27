@@ -119,3 +119,25 @@ function displayTypeahead() {
 }
 
 setInterval(displayTypeahead, 100);
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target.closest('#GD_skill')) {
+          entry.target.classList.add('show');
+        } else if (entry.target.closest('#WD_skill')) {
+          entry.target.classList.add('show');
+        }
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+  
+  const hiddenElementsLeft = document.querySelectorAll('#GD_skill .hidden-left');
+  hiddenElementsLeft.forEach((el) => observer.observe(el));
+  
+  const hiddenElementsRight = document.querySelectorAll('#WD_skill .hidden-right');
+  hiddenElementsRight.forEach((el) => observer.observe(el));
+  
+  

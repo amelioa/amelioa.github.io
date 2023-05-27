@@ -206,8 +206,8 @@ animation:         fade_move_down 4s ease-in-out infinite;
     display: flex;
     justify-content: center;
     background-color: rgb(234, 233, 233);
-    width: 70px;
-    height: 90px;
+    width: 80px;
+    height: 100px;
     border-radius: 30px;
 }
 
@@ -226,7 +226,7 @@ h3 {
 }
 
 .skill_group img {
-    width: 50px;
+    width: 60px;
 }
 
 .skill_group:hover img {
@@ -329,31 +329,7 @@ h3 {
     margin: 0px;
 }
 
-@keyframes slideInLeft {
-    0% {
-        transform: translate(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 
-#GD_skill {
-    animation: 1s ease-out 0s 1 slideInLeft;
-}
-
-@keyframes slideInRight {
-    0% {
-        transform: translate(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-#WD_skill {
-    animation: 1s ease-out 0s 1 slideInRight;
-}
 
 #skills i {
     margin-right: 6px;
@@ -380,7 +356,8 @@ footer {
         ". skills_area ."
         ". my_work_area ."
         ". blog_area ."
-        ". contact_area .";
+        ". contact_area ."
+        "footer_area footer_area footer_area";
 }
 
 #about_me {
@@ -403,6 +380,14 @@ footer {
     grid-area: contact_area;
 }
 
+footer {
+    grid-area: footer_area;
+}
+
+#hero {
+    grid-area: hero_area;
+}
+
 .view_gallery_button {
     border: solid 2px #333333;
     border-radius: 24px;
@@ -422,5 +407,35 @@ footer {
     margin-bottom: 20px;
 }
 
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 1s;
+}
+  
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 1s;
+}
 
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
 
+#GD_skill .skill_group:nth-child(1),
+#WD_skill .skill_group:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+#GD_skill .skill_group:nth-child(2),
+#WD_skill .skill_group:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+#GD_skill .skill_group:nth-child(3),
+#WD_skill .skill_group:nth-child(1) {
+  transition-delay: 600ms;
+}
+  
