@@ -258,7 +258,7 @@ h3 {
 .card {
     border: solid 2px #333333;
     border-radius: 15px;
-    padding: 30px;
+    padding: 60px;
     margin: 0 auto;
     text-align: center;
     width: 200px;
@@ -269,6 +269,8 @@ h3 {
     /* grid-template-rows: 1fr 1fr 1fr; */
     grid-template-areas: "card card card"
 }
+
+
 
 @keyframes slideInTop {
     0% {
@@ -395,12 +397,17 @@ footer {
     
 }
 
+.card a:hover {
+    border: solid 2px gray;
+}
+
 .card a {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 10pt;
     font-weight: 600;
     color: #333333;
+    transition: border 0.75s;
 }
 
 .card h3 {
@@ -416,6 +423,18 @@ footer {
 .hidden-right {
     opacity: 0;
     transform: translateX(100%);
+    transition: 1s;
+}
+
+.hidden-down {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: 1s;
+}
+
+.hidden-up {
+    opacity: 0;
+    transform: translateY(100%);
     transition: 1s;
 }
 
@@ -438,4 +457,38 @@ footer {
 #WD_skill .skill_group:nth-child(1) {
   transition-delay: 600ms;
 }
-  
+
+html {
+    scroll-behavior: smooth;
+}
+
+form {
+    padding: 50px;
+    background-color: rgb(229, 229, 229);
+    border-radius: 15px;
+    margin-top: -700px;
+}
+
+.text_input input {
+    width: 100%;
+    padding: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 4px;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+form,
+input,
+textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ 

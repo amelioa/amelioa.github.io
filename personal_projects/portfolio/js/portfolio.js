@@ -120,24 +120,54 @@ function displayTypeahead() {
 
 setInterval(displayTypeahead, 100);
 
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         if (entry.target.closest('#GD_skill')) {
+//           entry.target.classList.add('show');
+//         } else if (entry.target.closest('#WD_skill')) {
+//           entry.target.classList.add('show');
+//         }
+//       } else {
+//         entry.target.classList.remove('show');
+//       }
+//     });
+//   });
+  
+//   const hiddenElementsLeft = document.querySelectorAll('#GD_skill .hidden-left');
+//   hiddenElementsLeft.forEach((el) => observer.observe(el));
+  
+//   const hiddenElementsRight = document.querySelectorAll('#WD_skill .hidden-right');
+//   hiddenElementsRight.forEach((el) => observer.observe(el));
+
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        if (entry.target.closest('#GD_skill')) {
-          entry.target.classList.add('show');
-        } else if (entry.target.closest('#WD_skill')) {
-          entry.target.classList.add('show');
-        }
-      } else {
-        entry.target.classList.remove('show');
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      if (entry.target.closest('#GD_skill')) {
+        entry.target.classList.add('show');
+      } else if (entry.target.closest('#WD_skill')) {
+        entry.target.classList.add('show');
+      } else if (entry.target.classList.contains('hidden-up')) {
+        entry.target.classList.add('show');
+      } else if (entry.target.classList.contains('hidden-down')) {
+        entry.target.classList.add('show');
       }
-    });
+    } else {
+      entry.target.classList.remove('show');
+    }
   });
-  
-  const hiddenElementsLeft = document.querySelectorAll('#GD_skill .hidden-left');
-  hiddenElementsLeft.forEach((el) => observer.observe(el));
-  
-  const hiddenElementsRight = document.querySelectorAll('#WD_skill .hidden-right');
-  hiddenElementsRight.forEach((el) => observer.observe(el));
+});
+
+const hiddenElementsLeft = document.querySelectorAll('#GD_skill .hidden-left');
+hiddenElementsLeft.forEach((el) => observer.observe(el));
+
+const hiddenElementsRight = document.querySelectorAll('#WD_skill .hidden-right');
+hiddenElementsRight.forEach((el) => observer.observe(el));
+
+const hiddenElementsTop = document.querySelectorAll('.hidden-up');
+hiddenElementsTop.forEach((el) => observer.observe(el));
+
+const hiddenElementsBottom = document.querySelectorAll('.hidden-down');
+hiddenElementsBottom.forEach((el) => observer.observe(el));
   
   
