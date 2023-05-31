@@ -216,16 +216,20 @@ li a {
 
 /* ABOUT ME STYLES */
 
-#about_me_content {
+#about_me_container {
     display: flex;
 }
 
 #about_me_portrait {
-    width: 20vw;
+    width: 100px;
 }
 
 #about_me_text {
     margin-left: 20px;
+}
+
+#about_me_text p {
+    font-size: 2vw;
 }
 
 /* GRID STYLES */
