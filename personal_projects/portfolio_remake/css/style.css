@@ -216,7 +216,34 @@ li a {
 
 /* ABOUT ME STYLES */
 
+
+  
+
 #about_me_container {
+    display: flex;
+    align-items: stretch;
+}
+
+#about_me_portrait {
+    width: 15vw;
+    height: auto;
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+#about_me_text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about_me_text p {
+    font-size: 2vh;
+}
+
+
+/* #about_me_container {
     display: flex;
 }
 
@@ -230,13 +257,13 @@ li a {
 
 #about_me_text p {
     font-size: 2vw;
-}
+} */
 
 /* GRID STYLES */
 
 #site_grid {
     display: grid;
-    grid-template-columns: 1fr 800px 1fr;
+    grid-template-columns: 1fr 60vw 1fr;
     grid-auto-rows: minmax(50px,auto);
     grid-template-areas:
         "hero_area hero_area hero_area"
