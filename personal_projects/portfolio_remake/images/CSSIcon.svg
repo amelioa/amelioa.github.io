@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        opacity: .05;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #1d1d1b;
+      }
+
+      .cls-4 {
+        filter: url(#luminosity-noclip-3);
+      }
+
+      .cls-5 {
+        mask: url(#mask);
+      }
+
+      .cls-6 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        fill: #449bd6;
+      }
+
+      .cls-9 {
+        fill: #2659a5;
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-10, .cls-11 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-13 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-14 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-15 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-11 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-16 {
+        mask: url(#mask-3);
+      }
+
+      .cls-17 {
+        mask: url(#mask-2);
+      }
+
+      .cls-18 {
+        mask: url(#mask-1);
+      }
+    </style>
+    <filter id="luminosity-noclip" x="26.71" y="33.76" width="23.26" height="19.28" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip-2" x="26.71" y="-8242" width="23.26" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="26.71" y="-8242" width="23.26" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="linear-gradient" x1="38.34" y1="53.04" x2="38.34" y2="33.76" gradientUnits="userSpaceOnUse">
+      <stop offset=".39" stop-color="#000"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="mask" x="26.71" y="33.76" width="23.26" height="19.28" maskUnits="userSpaceOnUse">
+      <g class="cls-6">
+        <g class="cls-18">
+          <polygon class="cls-11" points="26.71 43.44 27.48 53.04 49.97 43.42 49.97 33.76 26.71 43.44"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-2" x1="38.34" y1="53.04" x2="38.34" y2="33.76" gradientUnits="userSpaceOnUse">
+      <stop offset=".39" stop-color="#d9d9d9"/>
+      <stop offset="1" stop-color="#d9d9d9"/>
+    </linearGradient>
+    <filter id="luminosity-noclip-3" x="49.97" y="23.38" width="24.92" height="20.04" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip-4" x="49.97" y="-8242" width="24.92" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-3" x="49.97" y="-8242" width="24.92" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="linear-gradient-3" x1="62.43" y1="43.42" x2="62.43" y2="23.38" xlink:href="#linear-gradient"/>
+    <mask id="mask-2" x="49.97" y="23.38" width="24.92" height="20.04" maskUnits="userSpaceOnUse">
+      <g class="cls-4">
+        <g class="cls-16">
+          <polygon class="cls-10" points="74.89 23.38 49.97 33.76 49.97 43.42 73.89 33.19 74.89 23.38"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-4" x1="62.43" y1="43.42" x2="62.43" y2="23.38" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-5" x1="26.74" y1="61.63" x2="73.05" y2="61.63" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ededec"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="24.61" y1="28.29" x2="74.89" y2="28.29" xlink:href="#linear-gradient-5"/>
+  </defs>
+  <polygon class="cls-9" points="82.5 88.11 50 96.86 17.5 88.11 10 6.86 90 6.86 82.5 88.11"/>
+  <polygon class="cls-8" points="50 13.44 50 89.88 50.07 89.9 76.37 82.82 82.44 13.44 50 13.44"/>
+  <g>
+    <polygon class="cls-7" points="49.97 33.76 26.71 43.44 27.48 53.04 49.97 43.42 73.89 33.19 74.89 23.38 49.97 33.76"/>
+    <g class="cls-5">
+      <polygon class="cls-13" points="26.71 43.44 27.48 53.04 49.97 43.42 49.97 33.76 26.71 43.44"/>
+    </g>
+    <g class="cls-17">
+      <polygon class="cls-12" points="74.89 23.38 49.97 33.76 49.97 43.42 73.89 33.19 74.89 23.38"/>
+    </g>
+    <polygon class="cls-15" points="26.74 43.44 27.52 53.04 62.02 53.15 61.25 65.93 49.9 69.13 38.98 66.38 38.32 58.44 28.18 58.44 29.5 73.76 50.01 79.83 70.4 73.87 73.05 43.44 26.74 43.44"/>
+    <g class="cls-2">
+      <polygon class="cls-3" points="49.97 43.44 26.71 43.44 27.48 53.04 49.97 53.11 49.97 43.44"/>
+      <polygon class="cls-3" points="49.97 69.1 49.86 69.13 38.95 66.38 38.28 58.44 28.14 58.44 29.47 73.76 49.97 79.83 49.97 69.1"/>
+    </g>
+    <polygon class="cls-14" points="24.61 23.38 74.89 23.38 73.89 33.19 25.83 33.19 24.61 23.38"/>
+    <polygon class="cls-1" points="49.97 23.38 24.61 23.38 25.83 33.19 49.97 33.19 49.97 23.38"/>
+  </g>
+</svg>

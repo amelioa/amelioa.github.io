@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Alyssa Amelio | Graphic Designer & Web Developer</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div id="site_grid">
+            <header id="hero">
+                <nav>
+                    <ul>
+                        <li id="alyssa_amelio_home">
+                            <div id="status">
+                                <div class="circle red"></div>
+                                <span id="internships"><a href="#contact">Looking For Internships</a></span>
+                            </div>
+                        </li>
+                        <li id="home">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about_me">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#my_work">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="hero_content_container">
+                    <img src="images/alyssa_amelio.svg" id="alyssa_amelio">
+                    <h1 id="typeahead">Placeholder</h1>
+                </div>
+                <div class="scroll-down"></div>
+            </header>
+            <section id="about_me">
+                <h1>About Me</h1>
+                <div id="about_me_content">
+                    <img src="images/AboutMePhoto.png" id="about_me_portrait" class="hidden-up">
+                    <div id="about_me_text" class="hidden-up">
+                        <p>
+                            Hello, my name is Alyssa! I am a dedicated graphic design and web development student based in Vero Beach, FL studying at the Florida Institute of Recording, Sound, and Technology.
+                        </p>
+                        <p>
+                            I have always had an eye for design and a knack for technology. Finding my passion for graphic design and web development has been nothing short of amazing. My passion drives me to expand my knowledge and refine my skills in both disciplines everyday.
+                        </p>
+                        <p>
+                            I will be graduating from F.I.R.S.T. Institute August 2023 and I am eager to dive into the graphic design and web development industry. I am hungry to achieve my goal of being a successful designer. There is nothing more satisfying than bringing a vision to life and I am incredibly excited to be able to do that as a career!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
+                <h1>Skills</h1>
+                <div class="flex_container" id="skill_group_section">
+                    <div class="skills_content" id="GD_skill">
+                        <h3 class="skills_title hidden-left"><i class="fa-solid fa-code" style="color: #333333;"></i> Graphic Designer</h3>
+                        <div class="flex_container">
+                            <div class="skill_group hidden-left">
+                                <div class="skill_box">
+                                    <img src="images/IllustratorIcon.svg">
+                                </div>
+                                <h4 class="skill_name">Illustrator</h4>
+                            </div>
+                            <div class="skill_group hidden-left">
+                                <div class="skill_box">
+                                    <img src="images/PhotoshopIcon.svg">
+                                </div>
+                                <h4 class="skill_name">Photoshop</h4>
+                            </div>
+                            <div class="skill_group hidden-left">
+                                <div class="skill_box">
+                                    <img src="images/XdIcon.svg">
+                                </div>
+                                <h4 class="skill_name">Xd</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_content" id="WD_skill">
+                        <h3 class="skills_title hidden-right"><i class="fa-solid fa-pen-nib" style="color: #333333;"></i> Web Developer</h3>
+                        <div class="flex_container">
+                            <div class="skill_group hidden-right">
+                                <div class="skill_box">
+                                    <img src="images/HTMLIcon.svg">
+                                </div>
+                                <h4 class="skill_name">HTML</h4>
+                            </div>
+                            <div class="skill_group hidden-right">
+                                <div class="skill_box">
+                                    <img src="images/CSSIcon.svg">
+                                </div>
+                                <h4 class="skill_name">CSS</h4>
+                            </div>
+                            <div class="skill_group hidden-right">
+                                <div class="skill_box">
+                                    <img src="images/WordPressIcon.svg">
+                                </div>
+                                <h4 class="skill_name">Wordpress</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="my_work">
+                <h1>My Work</h1>
+                <div id="gallery">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                </div>
+            </section>
+            <section id="contact">
+                <h1 id="contact">Contact</h1>
+                <form>
+                    <div class="text_input">
+                        <label for="name_id">Name</label>
+                        <input
+                            required
+                            minlength="2"
+                            maxlength="50"
+                            type="text"
+                            id="name_id"
+                            name="name"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="text_input">
+                        <label for="email_id">Email</label>
+                        <input
+                            required
+                            type="email"
+                            id="email_id"
+                            name="email"
+                            placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label for="message_id">Message</label>
+                        <textarea
+                            required
+                            minlength="15"
+                            maxlength="500"
+                            id="message_id"
+                            name="message"
+                            placeholder="Enter your message">
+                        </textarea>
+                    </div>
+                    <div id="submit_button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </section>
+            <footer>
+                <h4>Footer</h4>
+            </footer>
+        </div>
+        <script src="js/portfolio_remake.js"></script>
+    </body>
+</html>
