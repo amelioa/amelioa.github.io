@@ -1,65 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <head> 
         <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Portfolio Web Portal</title>
+        <title>Alyssa Amelio | Graphic Designer & Web Developer</title>
         <link href="css/style.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <header>
-            <div id="hero_content">
-                <h1>My GDWD 105 Portfolio Portal</h1>
-            </div>
-        </header>
-        <section id="accordion_section">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
+        <div id="site_grid">
+            <header id="hero">
+                <nav>
+                    <ul>
+                        <li id="alyssa_amelio_home">
+                            <div id="status">
+                                <div class="circle red"></div>
+                                <span id="internships"><a href="#contact">Looking For Internships</a></span>
+                            </div>
+                        </li>
+                        <li id="home">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about_me">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#my_work">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/alyssa-amelio-06aa19264/"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/amelioa"><i class="fa-brands fa-square-github"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="hero_content_container">
+                    <img src="images/alyssa_amelio.svg" id="alyssa_amelio">
+                    <h1 id="typeahead">Placeholder</h1>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div class="scroll-down"></div>
+            </header>
+            <section id="about_me">
+                <h1>About Me</h1>
+                <div id="about_me_container">
+                    <div id="about_me_portrait_wrapper">
+                    <img src="images/AboutMePhoto.png" id="about_me_portrait" class="hidden-up">
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div id="about_me_text" class="hidden-up">
+                        <p>
+                            Hello, my name is Alyssa! I am a dedicated graphic design and web development student based in Vero Beach, FL studying at the Florida Institute of Recording, Sound, and Technology.
+                        </p>
+                        <p>
+                            I have always had an eye for design and a knack for technology. Finding my passion for graphic design and web development has been nothing short of amazing. My passion drives me to expand my knowledge and refine my skills in both disciplines everyday.
+                        </p>
+                        <p>
+                            I will be graduating from F.I.R.S.T. Institute August 2023 and I am eager to dive into the graphic design and web development industry. I am hungry to achieve my goal of being a successful designer. There is nothing more satisfying than bringing a vision to life and I am incredibly excited to be able to do that as a career!
+                        </p>
                     </div>
-                  </div>
                 </div>
-              </div>
-        </section>
+            </section>
+            <section id="skills">
+                <h1>Skills</h1>
+                <div class="flex_container" id="skill_group_section">
+                    <div class="skills_content" id="GD_skill">
+                        <h3 class="skills_title hidden-left"><i class="fa-solid fa-code" style="color: #333333;"></i> Graphic Designer</h3>
+                        <div class="flex_container">
+                            <div class="skill_group hidden-left">
+                                <div class="skill_box">
+                                    <img src="images/IllustratorIcon.svg">
+                                </div>
+                                <h4 class="skill_name">Illustrator</h4>
+                            </div>
+                            <div class="skill_group hidden-left">
+                                <div class="skill_box">
+                                    <img src="images/PhotoshopIcon.svg">
+                                </div>
+                                <h4 class="skill_name">Photoshop</h4>
+                            </div>
+                            <div class="skill_group hidden-left">
+                                <div class="skill_box">
+                                    <img src="images/XdIcon.svg">
+                                </div>
+                                <h4 class="skill_name">Xd</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_content" id="WD_skill">
+                        <h3 class="skills_title hidden-right"><i class="fa-solid fa-pen-nib" style="color: #333333;"></i> Web Developer</h3>
+                        <div class="flex_container">
+                            <div class="skill_group hidden-right">
+                                <div class="skill_box">
+                                    <img src="images/HTMLIcon.svg">
+                                </div>
+                                <h4 class="skill_name">HTML</h4>
+                            </div>
+                            <div class="skill_group hidden-right">
+                                <div class="skill_box">
+                                    <img src="images/CSSIcon.svg">
+                                </div>
+                                <h4 class="skill_name">CSS</h4>
+                            </div>
+                            <div class="skill_group hidden-right">
+                                <div class="skill_box">
+                                    <img src="images/WordPressIcon.svg">
+                                </div>
+                                <h4 class="skill_name">Wordpress</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="my_work">
+                <h1>My Work</h1>
+                <div id="gallery">
+                    <img src="images/book_cover_mockup.jpg">
+                    <img src="images/calico_cafe_sign_mockup.jpg">
+                    <img src="images/national_park_poster_mockup.jpg">
+                    <img src="images/creative_portrait.jpg">
+                    <img src="images/portrait.jpg">
+                    <img src="images/the_office.jpg">
+                    <img src="images/year_of_the_rabbit.png">
+                    <img src="images/bloom_billboard_mockup.jpg">
+                </div>
+            </section>
+            <section id="contact">
+                <h1 id="contact_title">Contact</h1>
+                <h3>Connect with Me</h3>
+                <p>If you're curious to learn more about me or my work, have inquiries, or simply want to connect, send me a message below. I am excited to hear from you!</p>
+                <form>
+                    <div class="text_input">
+                        <label for="name_id">Name</label>
+                        <input
+                            required
+                            minlength="2"
+                            maxlength="50"
+                            type="text"
+                            id="name_id"
+                            name="name"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="text_input">
+                        <label for="email_id">Email</label>
+                        <input
+                            required
+                            type="email"
+                            id="email_id"
+                            name="email"
+                            placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label for="message_id">Message</label>
+                        <textarea
+                            required
+                            minlength="15"
+                            maxlength="500"
+                            id="message_id"
+                            name="message"
+                            placeholder="Enter your message">
+                        </textarea>
+                    </div>
+                    <div id="submit_button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </section>
+            <footer>
+                <nav id="footer_nav">
+                    <ul>
+                        <li id="home">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about_me">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#my_work">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/alyssa-amelio-06aa19264/"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/amelioa"><i class="fa-brands fa-square-github"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <h4>Designed and Developed by Alyssa Amelio</h4>
+                
+            </footer>
+        </div>
+        <script src="js/portfolio_remake.js"></script>
     </body>
 </html>
