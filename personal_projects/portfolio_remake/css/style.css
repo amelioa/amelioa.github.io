@@ -447,14 +447,14 @@ html {
     margin-bottom: 24px;
 }
 
-
-
-
 #about_me,
 #skills,
-#blog,
-#contact {
+#blog {
     height: 90vh;
+}
+
+#contact {
+    height: 75vh;
 }
 
 .flex_container {
@@ -462,6 +462,50 @@ html {
 }
 
 footer {
-    height: 15vh;
+    height: 25vh;
     background-color: #bcc5f9;
 }
+
+form {
+    padding: 50px;
+    background-color: #bcc5f9;
+    border-radius: 15px;
+    width: 35vw;
+    margin: 0 auto;
+}
+
+.text_input input {
+    width: 100%;
+    padding: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 4px;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+form,
+input,
+textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=submit] {
+    background: rgb(138, 99, 196);
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+#footer_nav ul li {
+    font-size: 2vh;
+}
+
