@@ -35,12 +35,6 @@
                         <li>
                             <a href="#">Contact</a>
                         </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/alyssa-amelio-06aa19264/"><i class="fa-brands fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/amelioa"><i class="fa-brands fa-square-github"></i></a>
-                        </li>
                     </ul>
                 </nav>
                 <div id="hero_content_container">
@@ -72,7 +66,7 @@
                 <h1>Skills</h1>
                 <div class="flex_container" id="skill_group_section">
                     <div class="skills_content" id="GD_skill">
-                        <h3 class="skills_title hidden-left"><i class="fa-solid fa-code" style="color: #333333;"></i> Graphic Designer</h3>
+                        <h3 class="skills_title hidden-left"><i class="fa-solid fa-pen-nib" style="color: #333333;"></i> Graphic Designer</h3>
                         <div class="flex_container">
                             <div class="skill_group hidden-left">
                                 <div class="skill_box">
@@ -95,7 +89,7 @@
                         </div>
                     </div>
                     <div class="skills_content" id="WD_skill">
-                        <h3 class="skills_title hidden-right"><i class="fa-solid fa-pen-nib" style="color: #333333;"></i> Web Developer</h3>
+                        <h3 class="skills_title hidden-right"><i class="fa-solid fa-code" style="color: #333333;"></i> Web Developer</h3>
                         <div class="flex_container">
                             <div class="skill_group hidden-right">
                                 <div class="skill_box">
@@ -134,73 +128,85 @@
             </section>
             <section id="contact">
                 <h1 id="contact_title">Contact</h1>
-                <h3>Connect with Me</h3>
-                <p>If you're curious to learn more about me or my work, have inquiries, or simply want to connect, send me a message below. I am excited to hear from you!</p>
-                <form>
-                    <div class="text_input">
-                        <label for="name_id">Name</label>
-                        <input
-                            required
-                            minlength="2"
-                            maxlength="50"
-                            type="text"
-                            id="name_id"
-                            name="name"
-                            placeholder="Enter your name">
-                    </div>
-                    <div class="text_input">
-                        <label for="email_id">Email</label>
-                        <input
-                            required
-                            type="email"
-                            id="email_id"
-                            name="email"
-                            placeholder="Enter your email">
+                <div id="contact_container">
+                    <div id="contact_form_container">
+                        <h3>Connect with Me</h3>
+                        <p>If you're curious to learn more about me or my work, have inquiries, or simply want to connect, send me a message below. I am excited to hear from you!</p>
+                        <form>
+                            <div class="text_input">
+                                <label for="name_id">Name</label>
+                                <input
+                                    required
+                                    minlength="2"
+                                    maxlength="50"
+                                    type="text"
+                                    id="name_id"
+                                    name="name"
+                                    placeholder="Enter your name">
+                            </div>
+                            <div class="text_input">
+                                <label for="email_id">Email</label>
+                                <input
+                                    required
+                                    type="email"
+                                    id="email_id"
+                                    name="email"
+                                    placeholder="Enter your email">
+                            </div>
+                            <div>
+                                <label for="message_id">Message</label>
+                                <textarea
+                                    required
+                                    minlength="15"
+                                    maxlength="500"
+                                    id="message_id"
+                                    name="message"
+                                    placeholder="Enter your message">
+                                </textarea>
+                            </div>
+                            <div id="submit_button">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
                     </div>
                     <div>
-                        <label for="message_id">Message</label>
-                        <textarea
-                            required
-                            minlength="15"
-                            maxlength="500"
-                            id="message_id"
-                            name="message"
-                            placeholder="Enter your message">
-                        </textarea>
+                        <h3>Email</h3>
+                        <p>alyssaameliodesigner@gmail.com</p>
+                        <h3>Socials</h3>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-github"></i>
                     </div>
-                    <div id="submit_button">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
+                </div>
             </section>
             <footer>
-                <nav id="footer_nav">
-                    <ul>
-                        <li id="home">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about_me">About Me</a>
-                        </li>
-                        <li>
-                            <a href="#my_work">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Resume</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/alyssa-amelio-06aa19264/"><i class="fa-brands fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/amelioa"><i class="fa-brands fa-square-github"></i></a>
-                        </li>
-                    </ul>
-                </nav>
-                <h4>Designed and Developed by Alyssa Amelio</h4>
-                
+                <div id="footer_container">
+                    <nav id="footer_nav">
+                        <ul>
+                            <li id="home">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about_me">About Me</a>
+                            </li>
+                            <li>
+                                <a href="#my_work">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Resume</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/alyssa-amelio-06aa19264/"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/amelioa"><i class="fa-brands fa-square-github"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h2>Designed and Developed by Alyssa Amelio</h2>
+                </div>
             </footer>
         </div>
         <script src="js/portfolio_remake.js"></script>
