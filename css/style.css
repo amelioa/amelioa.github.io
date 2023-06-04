@@ -215,33 +215,6 @@ li a {
 
 /* ABOUT ME STYLES */
 
-
-  
-
-/* #about_me_container {
-    display: flex;
-    align-items: stretch;
-}
-
-#about_me_portrait {
-    width: 15vw;
-    height: auto;
-    flex: 0 0 auto;
-    margin-right: 20px;
-}
-
-#about_me_text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#about_me_text p {
-    font-size: 2vh;
-} */
-
-
 #about_me_container {
     display: flex;
 }
@@ -482,6 +455,9 @@ input,
 textarea {
     margin-top: 5px;
     margin-bottom: 10px;
+    font-size: 12pt;
+    border: solid 1px #333333;
+    border-radius: 6px;
 }
 
 form,
@@ -511,6 +487,8 @@ input[type=submit] {
 
 #contact_container {
     display: flex;
+    gap: 75px;
+    justify-content: center;
 }
 
 footer h2 {
@@ -535,3 +513,22 @@ label {
     font-weight: 500;
     font-size: 14pt;
 }
+
+#contact_right_container {
+    text-align: right;
+}
+
+#contact i {
+    font-size: 26pt;
+    margin-top: 18px;
+}
+
+#contact a {
+    color: #333333;
+}
+
+textarea {
+    height: 100px;
+}
+
+
