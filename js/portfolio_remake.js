@@ -175,13 +175,13 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElementsLeftGD = document.querySelectorAll('#GD_skill .hidden-left');
 hiddenElementsLeftGD.forEach((el) => observer.observe(el));
 
-const hiddenElementsLeftMicrosoft = document.querySelectorAll('#microsoft_skill .hidden-left');
+const hiddenElementsLeftMicrosoft = document.querySelectorAll('#microsoft_skill .hidden-right');
 hiddenElementsLeftMicrosoft.forEach((el) => observer.observe(el));
 
 const hiddenElementsLeftWD = document.querySelectorAll('#WD_skill .hidden-left');
 hiddenElementsLeftWD.forEach((el) => observer.observe(el));
 
-const hiddenElementsRightMisc = document.querySelectorAll('#misc_skill .hidden-right');
+const hiddenElementsRightMisc = document.querySelectorAll('#misc_skill .hidden-left');
 hiddenElementsRightMisc.forEach((el) => observer.observe(el));
 
 const hiddenElementsRightWD = document.querySelectorAll('#WD_skill .hidden-right');

@@ -326,7 +326,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "GD_skill WD_skill"
-        "microsoft_skill misc_skill";
+        "misc_skill microsoft_skill";
 }
 
 #GD_skill {
