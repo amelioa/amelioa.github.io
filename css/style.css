@@ -345,6 +345,10 @@ footer {
     grid-area: misc_skill;
 }
 
+.skill_name {
+    white-space: nowrap;
+}
+
 .skill_group {
     margin: 12px;
 }
