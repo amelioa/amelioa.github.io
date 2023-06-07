@@ -426,8 +426,8 @@ footer {
 
 #GD_skill .skill_group:nth-child(3),
 #WD_skill .skill_group:nth-child(1),
-#microsoft_skill .skill_group:nth-child(3),
-#misc_skill .skill_group:nth-child(1) {
+#microsoft_skill .skill_group:nth-child(1),
+#misc_skill .skill_group:nth-child(3) {
   transition-delay: 600ms;
 }
 
