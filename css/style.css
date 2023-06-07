@@ -243,7 +243,7 @@ li a {
         ". skills_area ."
         ". my_work_area ."
         ". contact_area ."
-        "footer_area footer_area footer_area"
+        "footer_area footer_area footer_area";
 }
 
 #hero {
@@ -293,28 +293,71 @@ footer {
 
 .soft_skill_box {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(234, 233, 233);
-    width: 200px;
+    width: 180px;
     height: 60px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 15px;
-    margin: 5px;
+    margin: 10px;
 }
 
-.soft_skill_group {
-    display: flex;
-    
-}
 
 .soft_skill_group img {
-    width: 60px;
+    width: 50px;
 }
 
-.soft_skill_group {
+#soft_skills_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5,1 fr);
+    grid-template-areas: 
+        "creativity time_management communication adaptability attention_to_detail"
+        "positivity willingness_to_learn problem_solving leadership teamplayer";
+    width: 60vw;
+    margin: 0px auto;
 }
 
+#creativity {
+    grid-area: creativity;
+}
+
+#time_management {
+    grid-area: time_management;
+}
+
+#communication {
+    grid-area: communication;
+}
+
+#adaptability {
+    grid-area: adaptability;
+}
+
+#attention_to_detail {
+    grid-area: attention_to_detail;
+}
+
+#positivity {
+    grid-area: positivity;
+}
+
+#willingness_to_learn {
+    grid-area: willingness_to_learn;
+}
+
+#problem_solving {
+    grid-area: problem_solving;
+}
+
+#leadership {
+    grid-area: leadership;
+}
+
+#teamplayer {
+    grid-area: teamplayer;
+}
 
 .skill_group:hover img {
     animation: bounce-skills .6s;
@@ -582,5 +625,16 @@ label {
 
 textarea {
     height: 100px;
+}
+
+#fixed_home_button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #333333;
+    background:rgb(234, 233, 233);
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 2vw;
 }
 
