@@ -412,8 +412,8 @@ footer {
 
 #GD_skill .skill_group:nth-child(1),
 #WD_skill .skill_group:nth-child(3),
-#microsoft_skill .skill_group:nth-child(1),
-#misc_skill .skill_group:nth-child(3) {
+#microsoft_skill .skill_group:nth-child(3),
+#misc_skill .skill_group:nth-child(1) {
   transition-delay: 200ms;
 }
 
@@ -559,5 +559,3 @@ textarea {
     height: 100px;
 }
 
-
-/* test */
