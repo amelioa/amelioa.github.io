@@ -324,7 +324,25 @@ footer {
 #skill_group_section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "GD_skill WD_skill";
+    grid-template-areas: 
+        "GD_skill WD_skill"
+        "microsoft_skill misc_skill";
+}
+
+#GD_skill {
+    grid-area: GD_skill;
+}
+
+#WD_skill {
+    grid-area: WD_skill;
+}
+
+#microsoft_skill {
+    grid-area: microsoft_skill;
+}
+
+#misc_skill {
+    grid-area: misc_skill;
 }
 
 .skill_group {
@@ -389,17 +407,23 @@ footer {
 }
 
 #GD_skill .skill_group:nth-child(1),
-#WD_skill .skill_group:nth-child(3) {
+#WD_skill .skill_group:nth-child(3),
+#microsoft_skill .skill_group:nth-child(1),
+#misc_skill .skill_group:nth-child(3) {
   transition-delay: 200ms;
 }
 
 #GD_skill .skill_group:nth-child(2),
-#WD_skill .skill_group:nth-child(2) {
+#WD_skill .skill_group:nth-child(2),
+#microsoft_skill .skill_group:nth-child(2),
+#misc_skill .skill_group:nth-child(2) {
   transition-delay: 400ms;
 }
 
 #GD_skill .skill_group:nth-child(3),
-#WD_skill .skill_group:nth-child(1) {
+#WD_skill .skill_group:nth-child(1),
+#microsoft_skill .skill_group:nth-child(3),
+#misc_skill .skill_group:nth-child(1) {
   transition-delay: 600ms;
 }
 
