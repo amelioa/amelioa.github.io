@@ -291,6 +291,31 @@ footer {
     width: 60px;
 }
 
+.soft_skill_box {
+    display: flex;
+    background-color: rgb(234, 233, 233);
+    width: 200px;
+    height: 60px;
+    padding: 8px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.soft_skill_group {
+    display: flex;
+    
+}
+
+.soft_skill_group img {
+    width: 60px;
+}
+
+.soft_skill_group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
 .skill_group:hover img {
     animation: bounce-skills .6s;
 }
