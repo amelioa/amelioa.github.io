@@ -192,3 +192,5 @@ hiddenElementsTop.forEach((el) => observer.observe(el));
 
 const hiddenElementsBottom = document.querySelectorAll('.hidden-down');
 hiddenElementsBottom.forEach((el) => observer.observe(el));
+
+// test
