@@ -359,7 +359,8 @@ footer {
     grid-area: teamplayer;
 }
 
-.skill_group:hover img {
+.skill_group:hover img,
+.soft_skill_group:hover img {
     animation: bounce-skills .6s;
 }
 
@@ -428,7 +429,7 @@ footer {
 }
 
 .skill_box {
-    margin: 12px 6px 6px 6px;
+    margin: 12px 10px 10px 10px;
 }
 
 #skills h4  {
@@ -437,6 +438,10 @@ footer {
     font-weight: 600;
     color: #333333;
     margin: 0px;
+}
+
+.skill_group {
+    margin-bottom: 50px;
 }
 
 #skills h3 {
@@ -481,14 +486,24 @@ footer {
 #GD_skill .skill_group:nth-child(1),
 #WD_skill .skill_group:nth-child(3),
 #microsoft_skill .skill_group:nth-child(3),
-#misc_skill .skill_group:nth-child(1) {
+#misc_skill .skill_group:nth-child(1),
+#soft_skills .soft_skill_group:nth-child(1),
+#soft_skills .soft_skill_group:nth-child(2),
+#soft_skills .soft_skill_group:nth-child(3),
+#soft_skills .soft_skill_group:nth-child(4),
+#soft_skills .soft_skill_group:nth-child(5) {
   transition-delay: 200ms;
 }
 
 #GD_skill .skill_group:nth-child(2),
 #WD_skill .skill_group:nth-child(2),
 #microsoft_skill .skill_group:nth-child(2),
-#misc_skill .skill_group:nth-child(2) {
+#misc_skill .skill_group:nth-child(2),
+#soft_skills .soft_skill_group:nth-child(6),
+#soft_skills .soft_skill_group:nth-child(7),
+#soft_skills .soft_skill_group:nth-child(8),
+#soft_skills .soft_skill_group:nth-child(9),
+#soft_skills .soft_skill_group:nth-child(10) {
   transition-delay: 400ms;
 }
 
