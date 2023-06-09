@@ -392,10 +392,10 @@ footer {
 
 #skill_group_section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-        "GD_skill WD_skill"
-        "misc_skill microsoft_skill";
+        "GD_skill WD_skill soft_skill"
+        "misc_skill microsoft_skill soft_skill";
 }
 
 #GD_skill {
@@ -414,8 +414,20 @@ footer {
     grid-area: misc_skill;
 }
 
+#soft_skill {
+    grid-area: soft_skill;
+}
+
+#soft_skill .skills_title {
+    margin-bottom: 14px;
+}
+
 .skill_name {
     white-space: nowrap;
+}
+
+#soft_skill .skill_group {
+    margin: 0px;
 }
 
 .skill_group {
