@@ -14,9 +14,14 @@ body {
         "hero_area hero_area hero_area"
         ". about_me_area ."
         ". skills_area ."
+        ". services_area ."
         ". my_work_area ."
         ". contact_area ."
         "footer_area footer_area footer_area";
+}
+
+#services {
+    grid-area: services_area;
 }
 
 #hero {
@@ -391,7 +396,7 @@ li a {
     margin: 12px 10px 10px 10px;
 }
 
-#skills h4  {
+#skills h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
     font-weight: 600;
@@ -710,4 +715,71 @@ html {
 
 .skills_blob img {
     width: 60%;
+}
+
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 2.5rem;
+}
+
+.skills_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* services */
+
+.services_container {
+    row-gap: 2.5rem;
+    justify-content: center;
+}
+
+.services_card {
+    position: relative;
+    width: 228px;
+    height: 322px;
+    background-color: rgb(234, 233, 233);
+    text-align: center;
+    padding: 3.5rem 1rem;
+    border-radius: 7.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services_card i {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: .75rem;
+    transition: transform .8s;
+}
+
+.services_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #333333;
+    font-size: 16pt;
+    margin-bottom: 1.5rem;
+}
+
+/* .services_border {
+    width: 238px;
+    height: 342px;
+    border: 1.8px solid #333333;
+    border-radius: 7.75rem;
+    position: absolute;
+    inset: 0;
+    left: -10px;
+    margin: auto;
+} */
+
+.services_card:hover i {
+    transform: rotateY(360deg);
 }
