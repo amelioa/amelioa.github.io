@@ -15,9 +15,14 @@ body {
         ". about_me_area ."
         ". skills_area ."
         ". services_area ."
+        ". projects_area ."
         ". my_work_area ."
         ". contact_area ."
         "footer_area footer_area footer_area";
+}
+
+#projects {
+    grid-area: projects_area;
 }
 
 #services {
@@ -537,11 +542,11 @@ footer {
 
 /* MISC */
 
-#about_me,
+/* #about_me,
 #skills,
-#blog {
+#blog { 
     height: 100vh;
-}
+} */
 
 .flex_container {
     display: flex;
@@ -743,12 +748,12 @@ html {
 
 .services_card {
     position: relative;
-    width: 228px;
-    height: 322px;
+    width: 200px;
+    height: 200px;
     background-color: rgb(234, 233, 233);
     text-align: center;
-    padding: 3.5rem 1rem;
-    border-radius: 7.75rem;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -769,17 +774,61 @@ html {
     margin-bottom: 1.5rem;
 }
 
-/* .services_border {
-    width: 238px;
-    height: 342px;
+.services_border {
+    width: 250px;
+    height: 250px;
     border: 1.8px solid #333333;
-    border-radius: 7.75rem;
+    border-radius: 2.5rem;
     position: absolute;
     inset: 0;
     left: -10px;
     margin: auto;
-} */
+}
 
 .services_card:hover i {
     transform: rotateY(360deg);
 }
+
+/* PROJECTS */
+
+.projects_container {
+    overflow: initial;
+}
+
+.projects_content {
+    display: grid;
+    justify-content: center;
+}
+
+.projects_img {
+    width: 250px;
+    border-radius: .75rem;
+    margin-bottom: 1.25rem;
+}
+
+.projects_subtitle {
+    color: #444444;
+}
+
+.projects_title {
+    color: #333333;
+    margin-bottom: 1.25rem;
+    margin: .5rem 0 1.25rem;
+}
+
+.projects_button {
+    display: inline;
+    align-items: center;
+    column-gap: .5rem;
+    color: #333333;
+}
+
+.projects_button i {
+    font-size: 1rem;
+    transition: transform .3s;
+}
+
+.projects_button:hover i{
+    transform: translateX(.25rem);
+}
+
