@@ -655,8 +655,7 @@ html {
     animation: 1s ease-out 0s 1 slideInBottom;
 }
 
-.skill_group:hover img,
-.soft_skill_group:hover img {
+.skills_data:hover img {
     animation: bounce-skills .6s;
 }
 
@@ -744,6 +743,7 @@ html {
 .services_container {
     row-gap: 2.5rem;
     justify-content: center;
+    
 }
 
 .services_card {
@@ -783,6 +783,13 @@ html {
     inset: 0;
     left: -10px;
     margin: auto;
+    z-index: -1;
+    transition: opacity .6s;
+    opacity: 0;
+}
+
+.services_card:hover .services_border {
+    opacity: 1;
 }
 
 .services_card:hover i {
@@ -832,3 +839,22 @@ html {
     transform: translateX(.25rem);
 }
 
+@media screen and (min-width: 1048px) {
+    .services_container {
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 3rem;
+    }
+
+    .skills_container{
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        column-gap: 6.75rem;
+        margin-top: 4rem;
+    }
+
+   
+}
+
+.skills a{
+    text-decoration: none;
+}
