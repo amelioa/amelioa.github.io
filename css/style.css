@@ -14,11 +14,15 @@ body {
         "hero_area hero_area hero_area"
         ". about_me_area ."
         ". skills_area ."
-        ". services_area ."
         ". projects_area ."
+        ". qualifications_and_experience_area ."
         ". my_work_area ."
         ". contact_area ."
         "footer_area footer_area footer_area";
+}
+
+#qualifications_and_experience {
+    grid-area: qualifications_and_experience_area;
 }
 
 #projects {
@@ -256,104 +260,11 @@ li a {
 
 /* SKILLS SECTION */
 
-.skill_box {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(234, 233, 233);
-    width: 80px;
-    height: 100px;
-    border-radius: 30px;
-}
-
-.skill_group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skill_group img {
-    width: 50px;
-}
-
-.soft_skill_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(234, 233, 233);
-    width: 180px;
-    height: 60px;
-    padding: 10px;
-    border-radius: 15px;
-    margin: 10px;
-}
 
 
-.soft_skill_group img {
-    width: 50px;
-}
 
-#soft_skills_grid {
-    display: grid;
-    grid-template-columns: repeat(5,1 fr);
-    grid-template-areas: 
-        "creativity time_management communication adaptability attention_to_detail"
-        "positivity willingness_to_learn problem_solving leadership teamplayer";
-    width: 60vw;
-    margin: 0px auto;
-}
 
-#creativity {
-    grid-area: creativity;
-}
 
-#time_management {
-    grid-area: time_management;
-}
-
-#communication {
-    grid-area: communication;
-}
-
-#adaptability {
-    grid-area: adaptability;
-}
-
-#attention_to_detail {
-    grid-area: attention_to_detail;
-}
-
-#positivity {
-    grid-area: positivity;
-}
-
-#willingness_to_learn {
-    grid-area: willingness_to_learn;
-}
-
-#problem_solving {
-    grid-area: problem_solving;
-}
-
-#leadership {
-    grid-area: leadership;
-}
-
-#teamplayer {
-    grid-area: teamplayer;
-}
-
-.skills_content {
-    text-align: center;
-}
-
-#skill_group_section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "GD_skill WD_skill soft_skill"
-        "misc_skill microsoft_skill soft_skill";
-}
 
 #GD_skill {
     grid-area: GD_skill;
@@ -798,9 +709,8 @@ html {
 
 /* PROJECTS */
 
-.projects_container {
-    overflow: initial;
-}
+
+
 
 .projects_content {
     display: grid;
@@ -808,7 +718,7 @@ html {
 }
 
 .projects_img {
-    width: 250px;
+    width: 400px;
     border-radius: .75rem;
     margin-bottom: 1.25rem;
 }
@@ -852,9 +762,14 @@ html {
         margin-top: 4rem;
     }
 
+    
+    
+
    
 }
 
 .skills a{
     text-decoration: none;
 }
+
+
