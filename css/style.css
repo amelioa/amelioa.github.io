@@ -772,4 +772,14 @@ html {
     text-decoration: none;
 }
 
+.projects_cards img {
+    width: 350px;
+    border-radius: 1rem;
+}
 
+.projects_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    padding: 10px;
+}
