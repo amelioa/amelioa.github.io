@@ -4,7 +4,7 @@ body {
     margin: 0px;
 }
 
-/* SITE GRID */
+/* ------------------------- SITE GRID -------------------------  */
 
 #site_grid {
     display: grid;
@@ -57,7 +57,7 @@ footer {
     grid-area: footer_area;
 }
 
-/* TEXT STYLES */
+/* ------------------------- TEXT STYLES -------------------------  */
 
 h3 {
     font-family: 'Montserrat', sans-serif;
@@ -87,7 +87,7 @@ section h1 {
     text-align: center;
 }
 
-/* HERO/NAV STYLES */
+/* ------------------------- HERO/NAV STYLES -------------------------  */
 
 #hero {
     background-image: url(../images/HeroImage.jpg);
@@ -193,8 +193,8 @@ li a {
     50%  { opacity: 1;  }
     100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
-    
-/* XXXXXX */
+
+/* ------------------------- LOOKING FOR WORK -------------------------  */
 
 @keyframes up-right {
     0% {
@@ -240,218 +240,7 @@ li a {
     white-space: nowrap;
 }
 
-/* ABOUT ME STYLES */
-
-#about_me_container {
-    display: flex;
-}
-
-#about_me_portrait {
-    width: 20vw;
-}
-
-#about_me_text {
-    margin-left: 50px;
-}
-
-#about_me_text p {
-    font-size: 1.5vw;
-}
-
-/* SKILLS SECTION */
-
-
-
-
-
-
-
-#GD_skill {
-    grid-area: GD_skill;
-}
-
-#WD_skill {
-    grid-area: WD_skill;
-}
-
-#microsoft_skill {
-    grid-area: microsoft_skill;
-}
-
-#misc_skill {
-    grid-area: misc_skill;
-}
-
-#soft_skill {
-    grid-area: soft_skill;
-}
-
-#soft_skill .skills_title {
-    margin-bottom: 14px;
-}
-
-.skill_name {
-    white-space: nowrap;
-}
-
-#soft_skill .skill_group {
-    margin: 0px;
-}
-
-.skill_group {
-    margin: 12px;
-}
-
-.skills_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skill_box {
-    margin: 12px 10px 10px 10px;
-}
-
-#skills h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
-    font-weight: 600;
-    color: #333333;
-    margin: 0px;
-}
-
-.skill_group {
-    margin-bottom: 50px;
-}
-
-#skills h3 {
-    font-size: 18pt;
-}
-
-#skills i {
-    margin-right: 6px;
-}
-
-/* GALLERY */
-
-#gallery {
-    columns: 3 auto;
-    column-gap: 24px;
-}
-
-#gallery img {
-    width: 100%;
-    margin-bottom: 24px;
-}
-
-/* CONTACT SECTION */
-
-#contact {
-    height: 85vh;
-}
-
-.text_input input {
-    width: 100%;
-    padding: 4px;
-}
-
-textarea {
-    width: 100%;
-    padding: 4px;
-}
-
-input,
-textarea {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 12pt;
-    border: solid 1px #333333;
-    border-radius: 6px;
-}
-
-form,
-input,
-textarea {
-    font-family: 'Montserrat', sans-serif;
-}
-
-input[type=submit] {
-    background: #bcc5f9;
-    border: 0;
-    border-radius: 8px;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 12pt;
-}
-
-#contact_form_container {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-#contact_container {
-    display: flex;
-    gap: 75px;
-    justify-content: center;
-}
-
-
-#contact h3 {
-    font-size: 18pt;
-}
-
-#contact p {
-    font-size: 14pt;
-}
-
-label {
-    font-weight: 500;
-    font-size: 14pt;
-}
-
-#contact_right_container {
-    text-align: right;
-}
-
-#contact i {
-    font-size: 26pt;
-    margin-top: 18px;
-}
-
-#contact a {
-    color: #333333;
-}
-
-textarea {
-    height: 100px;
-}
-
-/* FOOTER SECTION */
-
-footer h2 {
-    text-align: center;
-    color: #333333;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    white-space: nowrap;
-    font-size: 14pt;
-}
-
-#footer_nav ul li {
-    font-size: 2vh;
-}
-
-footer {
-    height: 15vh;
-    background-color: #bcc5f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* MISC */
+/* ------------------------- MISC -------------------------  */
 
 /* #about_me,
 #skills,
@@ -461,6 +250,10 @@ footer {
 
 .flex_container {
     display: flex;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #fixed_home_button {
@@ -474,11 +267,7 @@ footer {
     font-size: 2vw;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-/* ANIMATIONS? */
+/* ------------------------- ANIMATIONS -------------------------  */
 
 .hidden-left {
     opacity: 0;
@@ -509,34 +298,18 @@ html {
     transform: translateX(0);
 }
 
-#GD_skill .skill_group:nth-child(1),
-#WD_skill .skill_group:nth-child(3),
-#microsoft_skill .skill_group:nth-child(3),
-#misc_skill .skill_group:nth-child(1),
-#soft_skills .soft_skill_group:nth-child(1),
-#soft_skills .soft_skill_group:nth-child(2),
-#soft_skills .soft_skill_group:nth-child(3),
-#soft_skills .soft_skill_group:nth-child(4),
-#soft_skills .soft_skill_group:nth-child(5) {
+#GD_skill .skills_info:nth-child(1),
+#WD_skill .skills_info:nth-child(3) {
   transition-delay: 200ms;
 }
 
-#GD_skill .skill_group:nth-child(2),
-#WD_skill .skill_group:nth-child(2),
-#microsoft_skill .skill_group:nth-child(2),
-#misc_skill .skill_group:nth-child(2),
-#soft_skills .soft_skill_group:nth-child(6),
-#soft_skills .soft_skill_group:nth-child(7),
-#soft_skills .soft_skill_group:nth-child(8),
-#soft_skills .soft_skill_group:nth-child(9),
-#soft_skills .soft_skill_group:nth-child(10) {
+#GD_skill .skills_info:nth-child(2),
+#WD_skill .skills_info:nth-child(2) {
   transition-delay: 400ms;
 }
 
-#GD_skill .skill_group:nth-child(3),
-#WD_skill .skill_group:nth-child(1),
-#microsoft_skill .skill_group:nth-child(1),
-#misc_skill .skill_group:nth-child(3) {
+#GD_skill .skills_info:nth-child(3),
+#WD_skill .skills_info:nth-child(1) {
   transition-delay: 600ms;
 }
 
@@ -588,50 +361,25 @@ html {
     }
 }
 
+/* ------------------------- ABOUT ME SECTION -------------------------  */
 
-/* new skills */
-
-.skills_container {
-    row-gap: 3.5rem;
-}
-
-.skills_title {
+#about_me_container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: .5rem;
-    margin-bottom: 2.5rem;
 }
 
-.skills_info,
-.skills_data,
-.skills_blob {
-    display: grid;
+#about_me_portrait {
+    width: 20vw;
 }
 
-.skills_info {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem 2rem;
+#about_me_text {
+    margin-left: 50px;
 }
 
-.skills_data {
-    justify-content: center;
-    text-align: center;
+#about_me_text p {
+    font-size: 1.5vw;
 }
 
-.skills_blob {
-    background-color: rgb(234, 233, 233);
-    width: 80px;
-    height: 100px;
-    border-radius: 30px;
-    place-items: center;
-    margin-bottom: 1rem;
-}
-
-.skills_blob img {
-    width: 60%;
-}
-
+/* SKILLS SECTION */
 
 .grid {
     display: grid;
@@ -641,15 +389,6 @@ html {
 .section {
     padding-block: 2.5rem;
 }
-
-.skills_data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* services */
 
 .services_container {
     row-gap: 2.5rem;
@@ -707,10 +446,85 @@ html {
     transform: rotateY(360deg);
 }
 
-/* PROJECTS */
+.skills a{
+    text-decoration: none;
+}
 
+.skills_container {
+    row-gap: 3.5rem;
+}
 
+.skills_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    margin-bottom: 2.5rem;
+}
 
+.skills_info,
+.skills_data,
+.skills_blob {
+    display: grid;
+}
+
+.skills_info {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 2rem;
+}
+
+.skills_data {
+    justify-content: center;
+    text-align: center;
+}
+
+.skills_blob {
+    background-color: rgb(234, 233, 233);
+    width: 80px;
+    height: 100px;
+    border-radius: 30px;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+
+.skills_blob img {
+    width: 60%;
+}
+
+.skills_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    color: #333333;
+    margin: 0px;
+}
+
+.skill_group {
+    margin-bottom: 50px;
+}
+
+#skills h3 {
+    font-size: 18pt;
+}
+
+#skills i {
+    margin-right: 6px;
+}
+
+/* ------------------------- WORK SECTION -------------------------  */
 
 .projects_content {
     display: grid;
@@ -749,6 +563,131 @@ html {
     transform: translateX(.25rem);
 }
 
+.projects_cards img {
+    width: 375px;
+    border-radius: 1rem;
+}
+
+/* gallery */
+
+#gallery {
+    columns: 3 auto;
+    column-gap: 24px;
+}
+
+#gallery img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+/* ------------------------- CONTACT SECTION -------------------------  */
+
+#contact {
+    height: 85vh;
+}
+
+.text_input input {
+    width: 100%;
+    padding: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 4px;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 12pt;
+    border: solid 1px #333333;
+    border-radius: 6px;
+}
+
+form,
+input,
+textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=submit] {
+    background: #bcc5f9;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+#contact_form_container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#contact_container {
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+}
+
+#contact h3 {
+    font-size: 18pt;
+}
+
+#contact p {
+    font-size: 14pt;
+}
+
+label {
+    font-weight: 500;
+    font-size: 14pt;
+}
+
+#contact_right_container {
+    text-align: right;
+}
+
+#contact i {
+    font-size: 26pt;
+    margin-top: 18px;
+}
+
+#contact a {
+    color: #333333;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* ------------------------- FOOTER SECTION -------------------------  */
+
+footer h2 {
+    text-align: center;
+    color: #333333;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+    font-size: 14pt;
+}
+
+#footer_nav ul li {
+    font-size: 2vh;
+}
+
+footer {
+    height: 15vh;
+    background-color: #bcc5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------- MEDIA QUERIES -------------------------  */
+
 @media screen and (min-width: 1048px) {
     .services_container {
         grid-template-columns: repeat(3, max-content);
@@ -762,27 +701,34 @@ html {
         margin-top: 4rem;
     }
 
-    
-    
-
-   
+    .projects_container {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        grid-gap: 4rem;
+        margin: 0 auto;
+        justify-content: center;
+    }
+       
 }
 
-.skills a{
-    text-decoration: none;
+@media only screen
+    and (max-width: 1279px)
+    and (min-width: 768px) {
+    .projects_container {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-gap: 4rem;
+        margin: 0 auto;
+        justify-content: center;
+    }
 }
 
-
-
-.projects_cards img {
-    width: 375px;
-    border-radius: 1rem;
-}
-
-.projects_container {
-    display: grid;
-    grid-template-columns: repeat(3, max-content);
-    grid-gap: 4rem;
-    margin: 0 auto;
-    justify-content: center;
+@media only screen and (max-width: 767px) {
+    .projects_container {
+        display: grid;
+        grid-template-columns: repeat(1, max-content);
+        grid-gap: 4rem;
+        margin: 0 auto;
+        justify-content: center;
+    }
 }
