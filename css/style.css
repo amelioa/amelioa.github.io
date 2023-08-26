@@ -57,6 +57,8 @@ footer {
     grid-area: footer_area;
 }
 
+
+
 /* ------------------------- TEXT STYLES -------------------------  */
 
 h3 {
@@ -242,11 +244,9 @@ li a {
 
 /* ------------------------- MISC -------------------------  */
 
-/* #about_me,
-#skills,
-#blog { 
+#about_me { 
     height: 100vh;
-} */
+}
 
 .flex_container {
     display: flex;
@@ -254,6 +254,16 @@ li a {
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+header {
+    scroll-snap-align: start;
+}
+
+section {
+    scroll-snap-align: start;
+    height: 100vh;
 }
 
 #fixed_home_button {
@@ -386,9 +396,7 @@ html {
     gap: 1.5rem;
 }
 
-.section {
-    padding-block: 2.5rem;
-}
+
 
 .services_container {
     row-gap: 2.5rem;
