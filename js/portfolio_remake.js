@@ -120,32 +120,19 @@ function displayTypeahead() {
 
 setInterval(displayTypeahead, 100);
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      if (entry.target.closest('#GD_skill')) {
-        entry.target.classList.add('show');
-      } else if (entry.target.closest('#WD_skill')) {
-        entry.target.classList.add('show');
-      } else if (entry.target.classList.contains('hidden-up')) {
-        entry.target.classList.add('show');
-      } else if (entry.target.classList.contains('hidden-down')) {
-        entry.target.classList.add('show');
-      }
-    } else {
-      entry.target.classList.remove('show');
-    }
-  });
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 200,
+  reset: true
 });
 
-const hiddenElementsLeftGD = document.querySelectorAll('#GD_skill .hidden-left');
-hiddenElementsLeftGD.forEach((el) => observer.observe(el));
-
-const hiddenElementsLeftWD = document.querySelectorAll('#WD_skill .hidden-left');
-hiddenElementsLeftWD.forEach((el) => observer.observe(el));
-
-const hiddenElementsTop = document.querySelectorAll('.hidden-up');
-hiddenElementsTop.forEach((el) => observer.observe(el));
-
-const hiddenElementsBottom = document.querySelectorAll('.hidden-down');
-hiddenElementsBottom.forEach((el) => observer.observe(el));
+sr.reveal('#about_me_portrait', {origin: 'left'});
+sr.reveal('#about_me_text', {origin: 'right'});
+sr.reveal('.services_container', {origin: 'top'});
+sr.reveal('.skills_content:nth-child(1) h3', {origin: 'left'});
+sr.reveal('.skills_content:nth-child(1) .skills_data', {origin: 'left', interval: 150});
+sr.reveal('.skills_content:nth-child(2) h3', {origin: 'right'});
+sr.reveal('.skills_content:nth-child(2) .skills_data', {origin: 'right', interval: 150});
+sr.reveal('.projects_container .projects_cards', {delay: 150, origin: 'bottom', interval: 150});
