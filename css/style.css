@@ -252,20 +252,6 @@ li a {
     display: flex;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-header {
-    scroll-snap-align: start;
-}
-
-section {
-    scroll-snap-align: start;
-    height: 100vh;
-}
-
 #fixed_home_button {
     position: fixed;
     bottom: 20px;
