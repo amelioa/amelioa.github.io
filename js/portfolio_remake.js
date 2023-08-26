@@ -124,8 +124,7 @@ const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
   duration: 2500,
-  delay: 200,
-  reset: true
+  delay: 200
 });
 
 sr.reveal('#about_me_portrait', {origin: 'left'});

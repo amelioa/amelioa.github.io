@@ -712,7 +712,7 @@ footer {
 }
 
 @media only screen
-    and (max-width: 1279px)
+    and (max-width: 1500px)
     and (min-width: 768px) {
     .projects_container {
         display: grid;
@@ -723,12 +723,18 @@ footer {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
     .projects_container {
         display: grid;
         grid-template-columns: repeat(1, max-content);
         grid-gap: 4rem;
         margin: 0 auto;
         justify-content: center;
+    }
+
+    .projects_container .projects_cards:nth-child(4),
+    .projects_container .projects_cards:nth-child(5),
+    .projects_container .projects_cards:nth-child(6) {
+        display: none;
     }
 }
