@@ -136,3 +136,12 @@ sr.reveal('.skills_content:nth-child(1) .skills_data', {origin: 'left', interval
 sr.reveal('.skills_content:nth-child(2) h3', {origin: 'right'});
 sr.reveal('.skills_content:nth-child(2) .skills_data', {origin: 'right', interval: 150});
 sr.reveal('.projects_container .projects_cards', {delay: 150, origin: 'bottom', interval: 150});
+
+const skillsDataElements = document.querySelectorAll('.skills_content:nth-child(2) .skills_data');
+
+// Calculate the delays for reversed animation
+let delay = 150 * (skillsDataElements.length - 1);
+skillsDataElements.forEach(element => {
+  sr.reveal(element, { origin: 'right', delay: delay });
+  delay -= 300; // Decrease delay for each element
+});
