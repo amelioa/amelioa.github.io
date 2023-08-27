@@ -707,7 +707,8 @@ footer {
     #hamburger {
         display: none;
     }
-       
+    
+    
 }
 
 @media only screen
@@ -722,6 +723,41 @@ footer {
     }
 }
 
+@media only screen
+    and (max-width: 1048px)
+    and (min-width: 768px) {
+        .skills_container {
+            margin-top: 50px;
+        }
+
+        .services_card {
+            position: relative;
+            width: 325px;
+            height: 200px;
+            background-color: rgb(234, 233, 233);
+            text-align: center;
+            padding: 1rem 1rem;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .services_border {
+            width: 375px;
+            height: 250px;
+            border: 1.8px solid #333333;
+            border-radius: 2.5rem;
+            position: absolute;
+            inset: 0;
+            left: -10px;
+            margin: auto;
+            z-index: -1;
+            transition: opacity .6s;
+            opacity: 0;
+        }
+    }
+
 @media only screen and (max-width: 900px) {
     .projects_container {
         display: grid;
@@ -730,6 +766,8 @@ footer {
         margin: 0 auto;
         justify-content: center;
     }
+
+    
 
     .projects_container .projects_cards:nth-child(4),
     .projects_container .projects_cards:nth-child(5),
@@ -810,7 +848,16 @@ footer {
     #desktop_nav nav li {
         justify-content: center;
     }
-       
+    
+    #about_me_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about_me_text {
+        margin-left: 0px;
+    }
 }
 
 #close {
