@@ -732,3 +732,77 @@ footer {
         display: none;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    #desktop_nav a,
+    .circle {
+        display: none;
+    }
+
+    #mobile_nav {
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        left: 100vw;
+        width: 100vw;
+        height: 100vh;
+        transition: left 0.5s;
+        display: block;
+    }
+
+    #mobile_nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mobile_nav a {
+        color: #333333;
+    }
+    #mobile_nav.active {
+        left: 0px;
+    }
+    #hamburger {
+        display: inline-block;
+        position: absolute;
+        top: 5;
+        margin-right: 10px;
+        right: 0;
+        border: none;
+        background-color: transparent;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #333333;
+    }
+}
+
+@media only screen
+    and (max-width: 1500px)
+    and (min-width: 768px) {
+        #mobile_nav,
+        #hamburger {
+            display: none;
+        }
+}
+
+@media screen 
+    and (max-width: 1000px) {
+    #internships,
+    .circle {
+        display: none;
+    }
+
+    /* NOT WORKING */
+    #desktop_nav nav li {
+        justify-content: center;
+    }
+       
+}
+
+#close {
+    border: none;
+    background-color: transparent;
+    color: #333333;
+    font-size: 18pt;
+}

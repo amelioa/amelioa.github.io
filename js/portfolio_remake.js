@@ -145,3 +145,15 @@ skillsDataElements.forEach(element => {
   sr.reveal(element, { origin: 'right', delay: delay });
   delay -= 300; // Decrease delay for each element
 });
+
+let hamburgerButton = document.getElementById("hamburger");
+let closeButton = document.getElementById("close");
+let mobileNav = document.getElementById("mobile_nav");
+
+hamburgerButton.onclick = function(){
+    mobileNav.classList.add("active");
+};
+
+closeButton.onclick = function(){
+    mobileNav.classList.remove("active");
+};
