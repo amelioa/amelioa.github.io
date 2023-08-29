@@ -146,14 +146,22 @@ skillsDataElements.forEach(element => {
   delay -= 300; // Decrease delay for each element
 });
 
-let hamburgerButton = document.getElementById("hamburger");
-let closeButton = document.getElementById("close");
-let mobileNav = document.getElementById("mobile_nav");
+// let hamburgerButton = document.getElementById("hamburger");
+// let closeButton = document.getElementById("close");
+// let mobileNav = document.getElementById("mobile_nav");
 
-hamburgerButton.onclick = function(){
-    mobileNav.classList.add("active");
-};
+// hamburgerButton.onclick = function(){
+//     mobileNav.classList.add("active");
+// };
 
-closeButton.onclick = function(){
-    mobileNav.classList.remove("active");
-};
+// closeButton.onclick = function(){
+//     mobileNav.classList.remove("active");
+// };
+
+const menu_btn = document.querySelector('.hamburger');
+const mobile_menu = document.querySelector('.mobile-nav');
+
+menu_btn.addEventListener('click', function () {
+    menu_btn.classList.toggle('is-active');
+    mobile_menu.classList.toggle('is-active');
+});
