@@ -783,7 +783,6 @@ footer {
         margin-top: 50px;
     }
 
-    .projects_container .projects_cards:nth-child(4),
     .projects_container .projects_cards:nth-child(5),
     .projects_container .projects_cards:nth-child(6) {
         display: none;
@@ -830,6 +829,11 @@ footer {
     #desktop_nav a,
     .circle {
         display: none;
+    }
+
+    #gallery {
+        columns: 2 auto;
+        column-gap: 24px;
     }
 }
 
@@ -946,6 +950,8 @@ footer {
     .hamburger {
         display: none;
     }
+
+
 }
 
 .mobile-nav ul {
