@@ -433,13 +433,13 @@ li a {
     opacity: 0;
 }
 
-.services_card:hover .services_border {
+/* .services_card:hover .services_border {
     opacity: 1;
 }
 
 .services_card:hover i {
     transform: rotateY(360deg);
-}
+} */
 
 .skills a{
     text-decoration: none;
@@ -788,9 +788,6 @@ footer {
         display: none;
     }
 
-    #contact_form_container p {
-        display: none;
-    }
 
     #contact_form_container h3 {
         margin-bottom: 10px;
@@ -976,3 +973,16 @@ footer {
     font-weight: 500;
     color: #666666;
 }
+
+#contact_me_button {
+    background: #bcc5f9;
+    border: 0;
+    border-radius: 8px;
+    width: 100px;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+}
+
