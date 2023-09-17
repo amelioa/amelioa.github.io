@@ -719,7 +719,12 @@ footer {
         #alyssa_amelio_stacked {
         display: none;
     }
+
+
+    
     }
+
+    
 
 @media only screen
     and (max-width: 1500px)
@@ -849,6 +854,10 @@ footer {
 
     #alyssa_amelio {
         display: none;
+    }
+
+    #hero_content_container {
+        margin-top: 125px;
     }
 
     #typeahead {
