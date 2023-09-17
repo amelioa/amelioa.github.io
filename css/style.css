@@ -713,13 +713,13 @@ footer {
     
 }
 
-/* @media only screen
+@media only screen
     and (max-width: 1920px)
-    and (min-width: 1500px) {
+    and (min-width: 900px) {
         #alyssa_amelio_stacked {
         display: none;
     }
-    } */
+    }
 
 @media only screen
     and (max-width: 1500px)
@@ -847,6 +847,14 @@ footer {
         text-align: left;
     }
 
+    #alyssa_amelio {
+        display: none;
+    }
+
+    #typeahead {
+        font-size: 6vw;
+    }
+
     
 }
 
@@ -894,9 +902,7 @@ footer {
     font-size: 18pt;
 }
 
-#alyssa_amelio_stacked {
-    display: none;
-}
+
 
 .hamburger {
     position: absolute;
