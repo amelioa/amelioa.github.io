@@ -819,6 +819,26 @@ footer {
         transition: opacity .6s;
         opacity: 0;
     }
+
+    #footer_nav ul li:nth-child(1),
+    #footer_nav ul li:nth-child(2),
+    #footer_nav ul li:nth-child(3),
+    #footer_nav ul li:nth-child(4),
+    #footer_nav ul li:nth-child(5),
+    #footer_nav ul li:nth-child(6)  {
+        display: none;
+    }
+
+    #footer_nav i {
+        font-size: 18pt;
+    }
+
+    /* #contact_container {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    
 }
 
 
