@@ -878,6 +878,10 @@ footer {
         display: none;
     }
 
+    #desktop_nav {
+        display: flex;
+    }
+
     /* NOT WORKING */
     #desktop_nav nav li {
         justify-content: center;
