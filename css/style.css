@@ -833,10 +833,19 @@ footer {
         font-size: 18pt;
     }
 
-    /* #contact_container {
+    #contact_container {
         display: flex;
         flex-direction: column;
-    } */
+    }
+
+    #contact_form_container,
+    #contact_right_container {
+        width: 100%;
+    }
+
+    #contact_right_container {
+        text-align: left;
+    }
 
     
 }
