@@ -245,9 +245,9 @@ li a {
 
 /* ------------------------- MISC -------------------------  */
 
-#about_me { 
+/* #about_me { 
     height: 100vh;
-}
+} */
 
 .flex_container {
     display: flex;
@@ -369,11 +369,13 @@ li a {
 }
 
 #about_me_text {
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    width: 80%;
+    margin: 0 auto;
 }
 
 #about_me_text p {
-    font-size: 1.5vw;
+    font-size: 14pt;
 }
 
 /* SKILLS SECTION */
