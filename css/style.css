@@ -368,10 +368,14 @@ li a {
     width: 20vw;
 }
 
-#about_me_text {
-    /* margin-left: 50px; */
-    /* width: 80%; */
-}
+/* #about_me_text {
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
 
 #about_me_text p {
     font-size: 14pt;
@@ -914,6 +918,8 @@ footer {
     #about_me_text p {
         margin-left: 0px;
     }
+
+   
 
 }
 
