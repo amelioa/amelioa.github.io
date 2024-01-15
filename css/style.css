@@ -564,6 +564,10 @@ li a {
     border-radius: 1rem;
 }
 
+.projects_cards a {
+    text-decoration: none;
+}
+
 /* gallery */
 
 #gallery {
@@ -907,7 +911,7 @@ footer {
         align-items: center;
     }
 
-    #about_me_text {
+    #about_me_text p {
         margin-left: 0px;
     }
 
