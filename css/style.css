@@ -435,14 +435,6 @@ li a {
     opacity: 0;
 }
 
-/* .services_card:hover .services_border {
-    opacity: 1;
-}
-
-.services_card:hover i {
-    transform: rotateY(360deg);
-} */
-
 .skills a{
     text-decoration: none;
 }
